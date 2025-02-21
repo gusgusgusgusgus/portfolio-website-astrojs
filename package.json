@@ -11,23 +11,7 @@
     "preview": "astro preview",
     "start": "astro dev"
   },
-  "lint-staged": {
-    "./**/*.{js,mjs,cjs}": [
-      "eslint --cache --fix --ext .js,.mjs,.cjs ./",
-      "prettier --cache --write \"./**/*.{js,mjs,cjs}\""
-    ],
-    "./**/*.ts": [
-      "eslint --cache --fix --ext .ts ./",
-      "prettier --cache --write \"./**/*.ts\""
-    ],
-    "./src/**/*.astro": [
-      "eslint --cache --fix --ext .astro ./src/",
-      "prettier --cache --write \"./src/**/*.astro\""
-    ],
-    "./src/**/*.css": "prettier --cache --write \"./src/**/*.css\"",
-    "./**/*.json": "prettier --cache --write \"./**/*.json\"",
-    "./**/*.yml": "prettier --cache --write \"./**/*.yml\""
-  },
+
   "dependencies": {
     "@astrojs/check": "0.9.4",
     "@astrojs/vercel": "8.0.7",
@@ -65,5 +49,22 @@
     "prettier": "3.4.2",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.6.6"
+  },
+  "lint-staged": {
+    "./**/*.{js,mjs,cjs}": [
+      "eslint --cache --fix --ext .js,.mjs,.cjs ./",
+      "prettier --cache --write \"./**/*.{js,mjs,cjs}\""
+    ],
+    "./**/*.ts": [
+      "eslint --cache --fix --ext .ts ./",
+      "prettier --cache --write \"./**/*.ts\""
+    ],
+    "./src/**/*.astro": [
+      "eslint --cache --fix --ext .astro ./src/",
+      "prettier --cache --write \"./src/**/*.astro\""
+    ],
+    "./src/**/*.css": "prettier --cache --write \"./src/**/*.css\"",
+    "./**/*.json": "prettier --cache --write \"./**/*.json\"",
+    "./**/*.yml": "prettier --cache --write \"./**/*.yml\""
   }
 }
