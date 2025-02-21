@@ -1,1 +1,1 @@
-export const URL = 'https://www.augustinseminel.com'
+export const URL = process.env.PRODUCTION_URL
