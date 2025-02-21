@@ -9,14 +9,14 @@
     "astro-template"
   ],
   "bugs": {
-    "url": "https://github.com/UXCorpRangel/portfolios-dev/issues"
+    "url": "https://github.com/gusgusgusgusgus/portfolio-website-astrojs/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/UXCorpRangel/portfolios-dev.git"
+    "url": "https://github.com/gusgusgusgusgus/portfolio-website-astrojs.git"
   },
   "license": "MIT",
-  "author": "UXCorpRangel - Felix Icaza <fx.joliett17@gmail.com>",
+  "author": "Augustin Seminel - Augustin Seminel <hello@augustinseminel.com>",
   "type": "module",
   "scripts": {
     "astro": "astro",
