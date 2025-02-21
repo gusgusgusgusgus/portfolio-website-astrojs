@@ -14,7 +14,7 @@ yarn-error.log*
 pnpm-debug.log*
 
 # lock
-pnpm-lock.yaml
+# pnpm-lock.yaml
 
 # environment variables
 .env
