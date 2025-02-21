@@ -1,0 +1,155 @@
+{
+  "title": "Développeur Web Fullstack - Augustin Seminel",
+  "description": "Spécialisé en React, NextJS, HTML5, CSS5, JavaScript ES6+, Node.js et WordPress.",
+  "navbar": [
+    {
+      "label": "Accueil",
+      "href": "#top"
+    },
+    {
+      "label": "À propos de moi",
+      "href": "#sobre-mi"
+    },
+    {
+      "label": "Expériences",
+      "href": "#experiencia-laboral"
+    },
+    {
+      "label": "Projets",
+      "href": "#proyectos"
+    }
+  ],
+  "hero": {
+    "job_availability": "Disponible en juin 2025!",
+    "title": "Augustin Seminel",
+    "job_title": "<strong>Développeur web fullstack</strong> à Paris.",
+    "description": "Spécialisé en React, NextJS, HTML5, CSS5, JavaScript ES6+, Node.js et WordPress.",
+    "cta": "Me contacter"
+  },
+  "experience": {
+    "title": "Expérience récente",
+    "jobs": {
+      "jobs_title": [
+        "Développeur Web Next.js",
+        "Formation Développeur Web Oclock.io"
+      ],
+      "jobs_description": [
+        {
+          "title": "Développeur Web Next.js",
+          "time": ["Novembre 2024", "Juin 2025"],
+          "description": "En collaboration avec le CTO et une équipe de 2 développeurs, conception et implémentation de fonctionnalités sur des sites web clients ainsi que sur le SaaS de l'entreprise.",
+          "list": [
+            "Next.js (React)",
+            "Payload CMS",
+            "PandaCSS",
+            "CD sur Vercel",
+            "Intégrations API (Stripe)"
+          ]
+        },
+        {
+          "title": "Formation Développeur Web Oclock.io",
+          "time": ["Décembre 2023", "Juin 2024"],
+          "description": "798 heures intensives sur 5 mois + projet de fin d'étude et passage du Titre Professionnel. https://www.oclock.io",
+          "list": [
+            "HTML5/CSS3",
+            "Javacript : React.js, Node.js",
+            "Git",
+            "POO",
+            "SQL, Sequelize, MongoDB",
+            "API REST",
+            "Redis",
+            "Spécialisation sur le frontend avec React"
+          ]
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title": "Projets",
+    "projects": [
+      {
+        "title": "Estelí Buses",
+        "description": "La primer plataforma para conocer los horarios de las terminales de autobuses interlocales del municipio de Estelí, Nicaragua.",
+        "image": "/src/images/projects/esteli-buses-project.jpg",
+        "techs": ["Astro", "TailwindCSS", "Firebase", "PWA"],
+        "code": "Código",
+        "preview": "Vista previa"
+      },
+      {
+        "title": "Portafolio UX Ana Rangel",
+        "description": "Lorem ipsum dolor sit amet consectetur. Faucibus quis sociis at sagittis egestas sed volutpat. Arcu pellentesque elit volutpat quam. Id dictum sagittis hendrerit diam viverra velit. Blandit id viverra quis lectus faucibus egestas ipsum turpis.",
+        "image": "/src/images/projects/ana-rangel-portafolio.jpg",
+        "techs": ["Astro", "CSS", "SASS", "Open Props", "TypeScript"],
+        "code": "Código",
+        "preview": "Vista previa"
+      },
+      {
+        "title": "Calculadora Payoneer Nicaragua",
+        "description": "Descubre una herramienta esencial para freelancers y negocios en Nicaragua. Nuestra Calculadora Payoneer Nicaragua te permite calcular de manera precisa y rápida las tarifas y comisiones al recibir pagos internacionales a través de Payoneer. ¡Empieza a usarla hoy y toma el control de tus finanzas!",
+        "image": "/src/images/projects/calculadora-payoneer-project.jpg",
+        "techs": [
+          "Astro",
+          "TailwindCSS",
+          "React",
+          "TypeScript",
+          "PWA",
+          "Firebase"
+        ],
+        "code": "Código",
+        "preview": "Vista previa"
+      }
+    ]
+  },
+  "contributions": {
+    "title": "Contribuciones",
+    "contributions": [
+      {
+        "src": "/src/images/contributions/advanced-periodontics.jpg",
+        "alt": "Advanced Periodontics",
+        "title": "Advanced Periodontics",
+        "description": "En conjunto con una agencia especializada en marketing en el estado de Texas, Estados Unidos. Colaboré en la creación del sitio web para la clínica Advanced Periodontics & Dental Implants.",
+        "techs": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
+        "repo": "#",
+        "repo_label": "Repositorio",
+        "commits": "#"
+      },
+      {
+        "src": "/src/images/contributions/advanced-periodontics.jpg",
+        "alt": "Advanced Periodontics",
+        "title": "Advanced Periodontics",
+        "description": "En conjunto con una agencia especializada en marketing en el estado de Texas, Estados Unidos. Colaboré en la creación del sitio web para la clínica Advanced Periodontics & Dental Implants.",
+        "techs": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
+        "repo": "#",
+        "repo_label": "Repositorio",
+        "commits": "#"
+      },
+      {
+        "src": "/src/images/contributions/advanced-periodontics.jpg",
+        "alt": "Advanced Periodontics",
+        "title": "Advanced Periodontics",
+        "description": "En conjunto con una agencia especializada en marketing en el estado de Texas, Estados Unidos. Colaboré en la creación del sitio web para la clínica Advanced Periodontics & Dental Implants.",
+        "techs": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
+        "repo": "#",
+        "repo_label": "Repositorio",
+        "commits": "#"
+      }
+    ]
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Développeur Fullstack Javascript junior, avec une expérience de 15 ans !",
+    "description1": "Je suis actuellement en stage pour 6 mois chez Dcrypte comme développeur après avoir suivi une formation intensive de 6 mois (798 heures) au sein de l'Ecole O'Clock et afin de devenir développeur.",
+    "description2": "Dans mon ancienne expérience qui aura un intérêt pour vous, je peux m'appuyer sur mes 15+ années d’expérience professionnelle sur des postes gravitant autour des domaines de la communication, du marketing digital et du CRM, dont un peu plus de 3 ans en tant que Brand Digital Manager et près de 6 ans à piloter des projets à grande échelle et manager de grandes équipes (30+ personnes).",
+    "description3": "Une expertise digitale développée tout au long de ce parcours couvrant tous ses champs d’application : établissement et pilotage d’une stratégie, coordination de nombreux acteurs techniques et gestion de projets complexes et de dimension internationale, UX design, media planning, audit et reporting, évangélisation et vulgarisation vers le top management.",
+    "description4": "Curieux de tout, autodidacte sur de nombreuses expertises, exigeant et engagé je mets mon expérience et mon sérieux au service des projets et besoins clients en matière de projets digitaux, de communication et d’expérience utilisateur."
+  },
+  "contact": {
+    "title": "Envie de travailler ensemble?",
+    "subtitle": "Je peux intégrer votre équipe ou travailler en freelance sur votre projet"
+  },
+  "footer": {
+    "designed": {
+      "designed_by": "Design de"
+    }
+  }
+}
