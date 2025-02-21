@@ -1,1 +1,1 @@
-export const URL = 'https://astrojsportfolio.netlify.app'
+export const URL = 'https://www.augustinseminel.com'

@@ -9,18 +9,24 @@ import sitemap from 'astro-sitemap'
 import playformCompress from '@playform/compress'
 import compressor from 'astro-compressor'
 
+import vercel from '@astrojs/vercel';
+
 // https://astro.build/config
 
 export default defineConfig({
   site: URL,
+
   server: {
     host: true
   },
+
   prefetch: {
     prefetchAll: true,
     defaultStrategy: 'viewport'
   },
+
   compressHTML: false,
+
   integrations: [
     tunnel(),
     icon(),
@@ -78,5 +84,7 @@ export default defineConfig({
       SVG: false
     }),
     compressor()
-  ]
+  ],
+
+  adapter: vercel()
 })
