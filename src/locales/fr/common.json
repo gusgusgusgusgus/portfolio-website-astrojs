@@ -8,15 +8,15 @@
     },
     {
       "label": "À propos de moi",
-      "href": "#sobre-mi"
+      "href": "#a-propos-de-moi"
     },
     {
       "label": "Expériences",
-      "href": "#experiencia-laboral"
+      "href": "#experience-recente"
     },
     {
       "label": "Projets",
-      "href": "#proyectos"
+      "href": "#projets"
     }
   ],
   "hero": {
