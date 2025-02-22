@@ -17,8 +17,11 @@
     {
       "label": "Projects",
       "href": "/en/#projects"
+    },
+    {
+      "label": "Contact",
+      "href": "#want-to-work-together?"
     }
-
   ],
   "hero": {
     "job_availability": "Available for work in June 2025",

@@ -9,9 +9,15 @@ const { cta } = t('hero', {
 const { title, subtitle } = t('contact', {
   returnObjects: true
 })
+
+const normalizeTitle = title
+  .toLowerCase()
+  .replaceAll(' ', '-')
+  .normalize('NFD')
+  .replace(/[\u0300-\u036f]/g, '')
 ---
 
-<section class="contact">
+<section id={normalizeTitle} class="contact">
   <h2 class="headline-1">{title}</h2>
   <h3 class="headline-2">{subtitle}</h3>
   <div class="buttons-container">
