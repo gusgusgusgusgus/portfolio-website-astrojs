@@ -20,7 +20,7 @@
     }
   ],
   "hero": {
-    "job_availability": "Disponible en juin 2025!",
+    "job_availability": "Disponible en juin 2025",
     "title": "Augustin Seminel",
     "job_title": "<strong>Développeur web fullstack</strong> à Paris.",
     "description": "Spécialisé en React, NextJS, HTML5, CSS5, JavaScript ES6+, Node.js et WordPress.",
@@ -42,7 +42,7 @@
             "Next.js (React)",
             "Payload CMS",
             "PandaCSS",
-            "CD sur Vercel",
+            "CI/CD sur Vercel",
             "Intégrations API (Stripe)"
           ]
         },
@@ -137,7 +137,7 @@
   },
   "about": {
     "title": "À propos de moi",
-    "subtitle": "Développeur Fullstack Javascript junior, avec une expérience de 15 ans !",
+    "subtitle": "Développeur Fullstack Javascript junior, avec une expérience de 15+ ans 🤓",
     "description1": "Je suis actuellement en stage pour 6 mois chez Dcrypte comme développeur après avoir suivi une formation intensive de 6 mois (798 heures) au sein de l'Ecole O'Clock et afin de devenir développeur.",
     "description2": "Dans mon ancienne expérience qui aura un intérêt pour vous, je peux m'appuyer sur mes 15+ années d’expérience professionnelle sur des postes gravitant autour des domaines de la communication, du marketing digital et du CRM, dont un peu plus de 3 ans en tant que Brand Digital Manager et près de 6 ans à piloter des projets à grande échelle et manager de grandes équipes (30+ personnes).",
     "description3": "Une expertise digitale développée tout au long de ce parcours couvrant tous ses champs d’application : établissement et pilotage d’une stratégie, coordination de nombreux acteurs techniques et gestion de projets complexes et de dimension internationale, UX design, media planning, audit et reporting, évangélisation et vulgarisation vers le top management.",
@@ -149,7 +149,10 @@
   },
   "footer": {
     "designed": {
-      "designed_by": "Design de"
+      "designed_by": "design par"
+    },
+    "developed": {
+      "developed_by": "Développé avec Astro.js,"
     }
   }
 }

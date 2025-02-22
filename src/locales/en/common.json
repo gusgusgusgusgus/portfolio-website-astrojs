@@ -1,47 +1,64 @@
 {
-  "title": "Web Frontend Developer - Felix Rangel",
-  "description": "Web Frontend Developer from Esteli, Nicaragua. Specialist in HTML5, CSS5, JavaScript ES6+, Node.js and WordPress.",
+  "title": "Web Fullstack Developer - Augustin Seminel",
+  "description": "Specialized in React, NextJS, HTML5, CSS5, JavaScript ES6+, Node.js and WordPress.",
   "navbar": [
     {
       "label": "Home",
       "href": "#top"
     },
     {
+      "label": "About me",
+      "href": "/en/#about-me"
+    },
+    {
       "label": "Experience",
-      "href": "/en/#work-experience"
+      "href": "/en/#recent-work-experience"
     },
     {
       "label": "Projects",
       "href": "/en/#projects"
-    },
-    {
-      "label": "About me",
-      "href": "/en/#about-me"
     }
+
   ],
   "hero": {
-    "job_availability": "Available for work!",
-    "title": "Hello I'm Felix Rangel!",
-    "job_title": "<strong>Web Frontend Developer</strong> from Esteli, Nicaragua.",
-    "description": "Specialist in HTML5, CSS5, JavaScript ES6+, Node.js and WordPress.",
+    "job_availability": "Available for work in June 2025",
+    "title": "Augustin Seminel",
+    "job_title": "<strong>Web Fullstack Developer</strong> from Paris.",
+    "description": "Specialist in React, NextJS, HTML5, CSS5, JavaScript ES6+, Node.js and WordPress",
     "cta": "Contact me"
   },
   "experience": {
-    "title": "Work Experience",
+    "title": "Recent work experience",
     "jobs": {
-      "jobs_title": ["Freelance", "HD Media Nicaragua"],
+      "jobs_title": ["Next.js Web Developer",
+        "Retraining to become Fullstack JS Web Developer"],
       "jobs_description": [
         {
-          "title": "Web Frontend Developer",
-          "time": ["Dec 2021"],
-          "description": "I create modern websites with good UI/UX practices. I also manage SEO, security and performance optimizations to increase conversion and visits.",
-          "list": ["Design of websites", "Optimization of websites"]
+          "title": "Next.js Web Developer",
+          "time": ["November 2024", "June 2025"],
+          "description": "With the CTO and a team of 2 developers, working on design and development of features on clients websites and on the company's SaaS",
+          "list": [
+            "Next.js (React)",
+            "Payload CMS",
+            "PandaCSS",
+            "CI/CD on Vercel",
+            "API integrations (Stripe)"
+          ]
         },
         {
-          "title": "WordPress Web Developer",
-          "time": ["Nov 2020", "Oct 2021"],
-          "description": "I was in charge of developing WordPress websites for clients in Nicaragua, during my time at the agency I contributed my knowledge in web security by increasing measures and decreasing security gaps in WordPress, configuring plugins and setting HTTP headers such as Content-Security-Policy (CSP), Cross-Origin-Resource-Policy (CORP), Cross-Origin-Opener-Policy (COOP), etc.",
-          "list": ["Design of websites", "Optimization of websites"]
+          "title": "Retraining to become Fullstack JS Web Developer",
+          "time": ["December 2024", "June 2024"],
+          "description": "Oclock.io school in web development: 798 hours of intensive courses and hands-on challenges during 5 months + end-of-studies project and official Titre Professionnel exam registration. https://www.oclock.io",
+          "list": [
+            "HTML5/CSS3",
+            "Javacript : React.js, Node.js",
+            "Git",
+            "POO",
+            "SQL, Sequelize, MongoDB",
+            "API REST",
+            "Redis",
+            "Specialization on frontend with React"
+          ]
         }
       ]
     }
@@ -119,21 +136,22 @@
   },
   "about": {
     "title": "About me",
-    "subtitle": "I'm a Midudev and ManzDev mod but I'm happier being an AnaRangel mod",
-    "description": "I am a Frontend Web Developer and WordPress Developer with over 3 years of experience, specialized in creating modern designs and optimizing web performance, with a focus on technologies such as HTML 5, CSS 3, JavaScript ES6+ and WordPress. I handle frameworks such as React and Astro, and I am an expert in WordPress visual builders, in addition to having a strong technical knowledge in Core Web Vitals, which makes me a passionate and highly qualified professional for any web development project."
+    "subtitle": "Fullstack Javascript junior Developer, with a 15+ years work experience 🤓",
+    "description1": "I am currently working as a Next.js developer for Dcrypte during a 6-month internship after having comme développeur after completing an intensive 6-month training course (798 hours) at the O'Clock school to become a developer.",
+    "description2": "In my previous working experiences, that should be of interest for my future employer, I can rely on 15+ years of hands-on experience and management in global brands Marketing, Communication, Digital and CRM positions, including over 3 years as a Brand Digital Manager and nearly 6 years managing large scale projects and teams (30+ people).",
+    "description3": "My digital expertise covers all fields of application: UX design, media planning, 360 campaigns, audit and reporting, evangelism and top management training. Projects managed went from building a strategy and successfully carrying it out to coordinating various technical stakeholders and being accountable for complex projects with an international spectrum.",
+    "description4": "Being curious about everything and self-taught on numerous expertises, the success of my work relies on a predilection for demanding objectives completion, a strong sense of accountability and a balance between strategic management and operational focus."
   },
   "contact": {
-    "title": "Ready to make your dreams come true?",
-    "subtitle": "I can boost your project or be part of your team"
+    "title": "Want to work together?",
+    "subtitle": "I can join your team or work on your project as a freelancer"
   },
   "footer": {
     "designed": {
-      "designed_with": "Designed with",
-      "designed_by": "by"
+      "designed_by": "design by"
     },
     "developed": {
-      "developed_with": "Made with",
-      "developed_by": "by"
+      "developed_by": "Developed with Astro.js, "
     }
   }
 }
