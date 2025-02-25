@@ -11,6 +11,7 @@ import 'sanitize.css'
 import 'sanitize.css/assets.css'
 import 'sanitize.css/typography.css'
 import '@styles/global.css'
+import SpeedInsights from "@vercel/speed-insights/astro"
 
 interface Options {
   title: string
@@ -31,6 +32,8 @@ const { title, description, metaRobots } = options
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <SpeedInsights />
 
     <title>{title}</title>
 
@@ -173,3 +176,4 @@ const { title, description, metaRobots } = options
     <slot name="dynamic-components" />
   </body>
 </html>
+
