@@ -6,7 +6,7 @@ html {
   --bg-separator: #5a5a5a;
   --text-color: #fff;
   --text-description-color: #a6a6a6;
-  --font: 'Inter Variable', sans-serif;
+  --font: 'Montserrat Variable', sans-serif;
   --border-color: #5a5a5a;
   --border-card-contributions-color: #272727;
   --radius: 24px;
@@ -25,7 +25,7 @@ html {
 
 html.dark {
   --bg-color: #fff;
-  --bg-secondary-color: color-mix(in srgb, #1e1e1e, #fff 95%);
+  --bg-secondary-color: color-mix(in srgb, #0f0e0e, #fff 95%);
   --bg-toggle-thumb: #d5d5d5;
   --bg-card-contributions: #cbcbcb4d;
   --bg-separator: #000;

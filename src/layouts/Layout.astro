@@ -1,6 +1,6 @@
 ---
 import I18NHead from '@astrolicious/i18n/components/I18nHead.astro'
-import inter from '@fontsource-variable/inter/files/inter-latin-standard-normal.woff2'
+import '@fontsource-variable/montserrat'
 import { Schema } from 'astro-seo-schema'
 import { getHtmlAttrs } from 'i18n:astro'
 import Favicons from '@components/Favicons.astro'
@@ -113,13 +113,7 @@ const { title, description, metaRobots } = options
 
     <slot name="stylesheet" />
 
-    <link
-      rel="preload"
-      as="font"
-      crossorigin="anonymous"
-      href={inter}
-      type="font/woff2"
-    />
+
 
     <script is:inline>
       if (localStorage.getItem('dark-theme') === 'true') {
