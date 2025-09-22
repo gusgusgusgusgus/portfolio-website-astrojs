@@ -56,32 +56,23 @@ export default defineConfig({
         return item
       }
     }),
-    playformCompress({
-      HTML: {
-        collapseBooleanAttributes: true,
-        maxLineLength: 0,
-        removeAttributeQuotes: false,
-        removeComments: true,
-        removeEmptyAttributes: true,
-        removeOptionalTags: true,
-        removeRedundantAttributes: true,
-        useShortDoctype: true
-      },
-      JavaScript: {
-        compress: {
-          ecma: 2015
-        },
-        format: {
-          comments: false,
-          ecma: 2015
-        },
-        ecma: 2015,
-        module: true
-      },
-      Image: false,
-      SVG: false
-    }),
-    compressor()
+    // playformCompress({
+    //   HTML: false,
+    //   JavaScript: {
+    //     compress: {
+    //       ecma: 2015
+    //     },
+    //     format: {
+    //       comments: false,
+    //       ecma: 2015
+    //     },
+    //     ecma: 2015,
+    //     module: true
+    //   },
+    //   Image: false,
+    //   SVG: false
+    // }),
+    // compressor()
   ],
 
   adapter: vercel()
