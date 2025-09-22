@@ -26,5 +26,8 @@ pnpm-debug.log*
 # Optional eslint cache
 .eslintcache
 
+# Vercel files
+.vercel/
+
 # VSCode files
 .vscode

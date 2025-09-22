@@ -9,18 +9,19 @@
     "dev": "astro dev",
     "prepare": "husky",
     "preview": "astro preview",
-    "start": "astro dev"
+    "start": "astro dev",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/vercel": "^8.2.7",
+    "@astrojs/vercel": "^8.2.8",
     "@astrolicious/i18n": "^0.6.2",
-    "@fontsource-variable/montserrat": "^5.2.6",
+    "@fontsource-variable/montserrat": "^5.2.8",
     "@inox-tools/aik-route-config": "^0.8.2",
     "@playform/compress": "^0.1.9",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
-    "astro": "^5.13.5",
+    "astro": "^5.13.10",
     "astro-compressor": "^1.1.2",
     "astro-icon": "^1.1.5",
     "astro-integration-kit": "^0.18.0",
@@ -30,7 +31,7 @@
     "i18next": "^24.2.3",
     "sanitize.css": "^13.0.0",
     "schema-dts": "^1.1.5",
-    "sharp": "^0.34.3",
+    "sharp": "^0.34.4",
     "typescript": "^5.9.2"
   },
   "devDependencies": {
