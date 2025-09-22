@@ -11,7 +11,21 @@ const { title, projects } = t('projects', {
   <h2>
     <span>{title}</span>
   </h2>
-  <p>Coming soon... Under construction 🦺🔨🪚</p>
+  {
+    projects.map(({ title, description, image, techs, code, code_url, preview, preview_url }) => (
+      <CardProject
+        src={image}
+        alt={title}
+        title={title}
+        description={description}
+        techs={techs}
+        code={code}
+        code_url={code_url}
+        preview={preview}
+        preview_url={preview_url}
+      />
+    ))
+  }
 </section>
 
 <style>

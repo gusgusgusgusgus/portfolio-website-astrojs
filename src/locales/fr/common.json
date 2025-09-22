@@ -41,7 +41,10 @@
       "jobs_description": [
         {
           "title": "Développeur Web freelance",
-          "time": ["Juillet 2025", "Maintenant"],
+          "time": [
+            "Juillet 2025",
+            "Maintenant"
+          ],
           "description": "Durant l'été 2025 j'ai développé en autonomie la section e-commerce du site d'un client. Boutique développée en Next.js, adossée au Headless CMS Payload pour en gérer le contenu, les prix, promotions et le suivi des commandes clients. Je travaille jusqu'à la fin de l'année sur une série de nouvelles features pour le SaaS de Dcrypte (DataHouse)",
           "list": [
             "Next.js (React)",
@@ -55,7 +58,10 @@
         },
         {
           "title": "Développeur Web junior",
-          "time": ["Novembre 2024", "Juin 2025"],
+          "time": [
+            "Novembre 2024",
+            "Juin 2025"
+          ],
           "description": "En collaboration avec le CTO et une équipe de 2 développeurs, conception et implémentation de fonctionnalités sur des sites web clients ainsi que sur le SaaS de l'entreprise.",
           "list": [
             "Next.js (React)",
@@ -66,7 +72,10 @@
         },
         {
           "title": "Formation Développeur Web Oclock.io",
-          "time": ["Décembre 2023", "Juin 2024"],
+          "time": [
+            "Décembre 2023",
+            "Juin 2024"
+          ],
           "description": "798 heures intensives sur 5 mois + projet de fin d'étude et passage du Titre Professionnel. https://www.oclock.io",
           "list": [
             "HTML5/CSS3",
@@ -87,35 +96,93 @@
     "title": "Projets",
     "projects": [
       {
-        "title": "Estelí Buses",
-        "description": "La primer plataforma para conocer los horarios de las terminales de autobuses interlocales del municipio de Estelí, Nicaragua.",
-        "image": "/src/images/projects/esteli-buses-project.jpg",
-        "techs": ["Astro", "TailwindCSS", "Firebase", "PWA"],
-        "code": "Código",
-        "preview": "Vista previa"
+        "title": "Boutique e-commerce APMF",
+        "description": "Développement en full autonomie d'une boutique e-commerce en Next.js, adossée au headless CMS Payload, pour le compte de l'Association Pour la Médiation Familiale. Parcours et templates de pages designés par moi-même, gestion des commandes et produits depuis le CMS de Payload, gestion des paiements avec Stripe. CI/CD sur Azure DevOps. Projet de juillet à septembre 2025",
+        "image": "/src/images/projects/boutique-apmf-nextjs-payloadcms.png",
+        "techs": [
+          "Nextjs",
+          "PayloadCMS",
+          "Figma",
+          "PandaCSS",
+          "PostgreSQL",
+          "Stripe",
+          "Azure DevOps"
+        ],
+        "code": "Repo privé",
+        "code_url": "https://github.com/gusgusgusgusgus/",
+        "preview": "Voir le projet en production",
+        "preview_url": "https://apmf.fr/boutique"
       },
       {
-        "title": "Portafolio UX Ana Rangel",
-        "description": "Lorem ipsum dolor sit amet consectetur. Faucibus quis sociis at sagittis egestas sed volutpat. Arcu pellentesque elit volutpat quam. Id dictum sagittis hendrerit diam viverra velit. Blandit id viverra quis lectus faucibus egestas ipsum turpis.",
-        "image": "/src/images/projects/ana-rangel-portafolio.jpg",
-        "techs": ["Astro", "CSS", "SASS", "Open Props", "TypeScript"],
-        "code": "Código",
-        "preview": "Vista previa"
+        "title": "Refonte site APMF",
+        "description": "En repartant d'un vieux site Wordpress, nous avons redéveloppé intégralement en Next.js, adossée au headless CMS Payload, le site de l'Association Pour la Médiation Familiale. Templates de pages, parcours et automatisations designés par moi-même. Mise à disposition d'un CMS pour la cliente qui peut ainsi maintenir le contenu de son site en autonomie. Mise en place d'une gestion des adhésions, des comptes clients et de l'annuaire au niveau technique le plus récent. CI/CD sur Github et Vercel en développement puis Azure DevOps. Projet de novembre à mai 2025",
+        "image": "/src/images/projects/annuaire-apmf-nextjs-payloadcms.png",
+        "techs": [
+          "Nextjs",
+          "PayloadCMS",
+          "OpenStreetMap",
+          "Figma",
+          "PandaCSS",
+          "PostgreSQL",
+          "Azure DevOps"
+        ],
+        "code": "Repo privé",
+        "code_url": "https://github.com/gusgusgusgusgus/",
+        "preview": "Voir le projet en production",
+        "preview_url": "https://apmf.fr/"
       },
       {
-        "title": "Calculadora Payoneer Nicaragua",
-        "description": "Descubre una herramienta esencial para freelancers y negocios en Nicaragua. Nuestra Calculadora Payoneer Nicaragua te permite calcular de manera precisa y rápida las tarifas y comisiones al recibir pagos internacionales a través de Payoneer. ¡Empieza a usarla hoy y toma el control de tus finanzas!",
-        "image": "/src/images/projects/calculadora-payoneer-project.jpg",
+        "title": "Mon site de Portfolio",
+        "description": "Pour réaliser ce portfolio sur lequel vous vous trouvé, j'ai décidé d'utiliser Astro.js pour l'apprendre. Un site en single-page, full responsive, avec un peu d'animations en JavaScript. Full TypeScript, déployé dans un premier temps sur Vercel avant de le migrer vers mon serveur (Hébergement O2Switch). Design de ce template par Ana Rangel.",
+        "image": "/src/images/projects/portfolio-augustinseminel-astrojs.png",
         "techs": [
           "Astro",
-          "TailwindCSS",
-          "React",
+          "CSS",
+          "SASS",
+          "Open Props",
           "TypeScript",
-          "PWA",
-          "Firebase"
+          "SEO",
+          "Vercel"
         ],
-        "code": "Código",
-        "preview": "Vista previa"
+        "code": "Code",
+        "code_url": "https://github.com/gusgusgusgusgus/portfolio-website-astrojs",
+        "preview": "Voir ce projet",
+        "preview_url": "https://www.augustinseminel.com"
+      },
+      {
+        "title": "App de fitness et santé",
+        "description": "Projet de fin d'études à l'école O'Clock, nous avons réalisé en équipe ce projet en React. Fitsync est une application qui permet de suivre l'évolution de son poids et de sa consommation d'énergie (en MET) grâce au loggin d'activités physiques. Développé en mobile-first, en double repo (frontend et backend séparés. Design par un designer professionnel (Stéphane Jourdan), faisant partie de l'équipe. Projet réalisé en mai-juin 2024. Re-déploiement prochainement sur mon hébergement pour mettre à disposition une preview",
+        "image": "/src/images/projects/projet-fitsync.png",
+        "techs": [
+          "React",
+          "Redux",
+          "Node et Express",
+          "API Rest",
+          "PostgreSLQ",
+          "TypeScript",
+          "MuiCore design library",
+          "Vercel"
+        ],
+        "code": "Code",
+        "code_url": "https://github.com/gusgusgusgusgus/titre-professionnel-projet-fitsync-front",
+        "preview": "Preview à venir",
+        "preview_url": ""
+      },
+      {
+        "title": "Site de mariage",
+        "description": "Réalisation d'un site pour un mariage, sur Wordpress. Template adapté (CSS & PHP) pour le besoin, et un site en trois temps: le teasing (1 an avant) avec la gestion des réponses au faire-part (QRCode, Formulaire et stockage en base de données et notifications emails automatiques), le mariage avec les informations utiles et emailings aux invités et enfin post-mariage avec les photos et informations pour ceux qui voudraient retourner dans la région. Pas de preview, le site a été dépublié en septembre 2025. Projet de mai 2023 à août 2025, en trois temps d'une semaine",
+        "image": "/src/images/projects/site-mariage-wordpress.jpg",
+        "techs": [
+          "Wordpress",
+          "Custom template",
+          "Forminator",
+          "Sécurité",
+          "Mailchimp"
+        ],
+        "code": "Repo privé",
+        "code_url": "",
+        "preview": "Preview à venir",
+        "preview_url": "#"
       }
     ]
   },
@@ -127,7 +194,13 @@
         "alt": "Advanced Periodontics",
         "title": "Advanced Periodontics",
         "description": "En conjunto con una agencia especializada en marketing en el estado de Texas, Estados Unidos. Colaboré en la creación del sitio web para la clínica Advanced Periodontics & Dental Implants.",
-        "techs": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
+          "WordPress"
+        ],
         "repo": "#",
         "repo_label": "Repositorio",
         "commits": "#"
@@ -137,7 +210,13 @@
         "alt": "Advanced Periodontics",
         "title": "Advanced Periodontics",
         "description": "En conjunto con una agencia especializada en marketing en el estado de Texas, Estados Unidos. Colaboré en la creación del sitio web para la clínica Advanced Periodontics & Dental Implants.",
-        "techs": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
+          "WordPress"
+        ],
         "repo": "#",
         "repo_label": "Repositorio",
         "commits": "#"
@@ -147,7 +226,13 @@
         "alt": "Advanced Periodontics",
         "title": "Advanced Periodontics",
         "description": "En conjunto con una agencia especializada en marketing en el estado de Texas, Estados Unidos. Colaboré en la creación del sitio web para la clínica Advanced Periodontics & Dental Implants.",
-        "techs": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
+          "WordPress"
+        ],
         "repo": "#",
         "repo_label": "Repositorio",
         "commits": "#"
@@ -157,10 +242,10 @@
   "about": {
     "title": "À propos de moi",
     "subtitle": "Développeur Fullstack Javascript, avec une expérience pré-reconversion de 15+ ans 🤓",
-"description1":"Depuis juillet 2025, je suis développeur en freelance et motivé pour travailler en mode projet ou au sein de votre équipe.",
-"description2":"De novembre 2024 à juin 2025, j'ai été embauché comme développeur junior pour 6 mois dans une startup (développement d'un SaaS et sites web clients) après avoir suivi une formation intensive de 6 mois (798 heures) au sein de l'Ecole O'Clock afin de devenir développeur. J'ai obtenu mon Titre Professionnel Développeur Web et Web Mobile (DWWM) en mai 2025.",
-"description3":"Je peux m'appuyer sur mes 15+ années d’expérience professionnelle sur des postes gravitant autour des domaines de la communication, du marketing digital et du CRM, dont un peu plus de 3 ans en tant que Brand Digital Manager et près de 6 ans à piloter des projets à grande échelle et manager de grandes équipes (30+ personnes).",
-"description4":"Curieux de tout, autodidacte sur de nombreuses expertises, exigeant et engagé je mets mon expérience et mon sérieux au service de vos projets."
+    "description1": "Depuis juillet 2025, je suis développeur en freelance et motivé pour travailler en mode projet ou au sein de votre équipe.",
+    "description2": "De novembre 2024 à juin 2025, j'ai été embauché comme développeur junior pour 6 mois dans une startup (développement d'un SaaS et sites web clients) après avoir suivi une formation intensive de 6 mois (798 heures) au sein de l'Ecole O'Clock afin de devenir développeur. J'ai obtenu mon Titre Professionnel Développeur Web et Web Mobile (DWWM) en mai 2025.",
+    "description3": "Je peux m'appuyer sur mes 15+ années d’expérience professionnelle sur des postes gravitant autour des domaines de la communication, du marketing digital et du CRM, dont un peu plus de 3 ans en tant que Brand Digital Manager et près de 6 ans à piloter des projets à grande échelle et manager de grandes équipes (30+ personnes).",
+    "description4": "Curieux de tout, autodidacte sur de nombreuses expertises, exigeant et engagé je mets mon expérience et mon sérieux au service de vos projets."
   },
   "contact": {
     "title": "Envie de travailler ensemble?",
