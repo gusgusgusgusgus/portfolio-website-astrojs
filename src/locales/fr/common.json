@@ -1,6 +1,6 @@
 {
   "title": "Développeur Web Fullstack - Augustin Seminel",
-  "description": "Spécialisé en React, NextJS, HTML5, CSS5, JavaScript ES6+, Node.js et WordPress.",
+  "description": "Spécialisé en React, NextJS, HTML5, CSS5, TypeScript, Node.js et WordPress.",
   "navbar": [
     {
       "label": "Accueil",
@@ -24,7 +24,7 @@
     }
   ],
   "hero": {
-    "job_availability": "Disponible en juin 2025",
+    "job_availability": "Disponible en janvier 2026",
     "title": "Augustin Seminel",
     "job_title": "<strong>Développeur web fullstack</strong> à Paris.",
     "description": "Spécialisé en React, NextJS, HTML5, CSS5, JavaScript ES6+, Node.js et WordPress.",
@@ -34,20 +34,34 @@
     "title": "Expérience récente",
     "jobs": {
       "jobs_title": [
-        "Développeur Web Next.js",
+        "Développeur Web freelance",
+        "Développeur Web junior",
         "Formation Développeur Web Oclock.io"
       ],
       "jobs_description": [
         {
-          "title": "Développeur Web Next.js",
+          "title": "Développeur Web freelance",
+          "time": ["Juillet 2025", "Maintenant"],
+          "description": "Durant l'été 2025 j'ai développé en autonomie la section e-commerce du site d'un client. Boutique développée en Next.js, adossée au Headless CMS Payload pour en gérer le contenu, les prix, promotions et le suivi des commandes clients. Je travaille jusqu'à la fin de l'année sur une série de nouvelles features pour le SaaS de Dcrypte (DataHouse)",
+          "list": [
+            "Next.js (React)",
+            "Payload CMS",
+            "PandaCSS",
+            "Local API & API REST",
+            "PostgreSQL, MongoDB",
+            "Intégrations API (Stripe)",
+            "CI/CD sur Azure DevOps"
+          ]
+        },
+        {
+          "title": "Développeur Web junior",
           "time": ["Novembre 2024", "Juin 2025"],
           "description": "En collaboration avec le CTO et une équipe de 2 développeurs, conception et implémentation de fonctionnalités sur des sites web clients ainsi que sur le SaaS de l'entreprise.",
           "list": [
             "Next.js (React)",
             "Payload CMS",
             "PandaCSS",
-            "CI/CD sur Vercel",
-            "Intégrations API (Stripe)"
+            "CI/CD sur Vercel"
           ]
         },
         {
@@ -62,7 +76,8 @@
             "SQL, Sequelize, MongoDB",
             "API REST",
             "Redis",
-            "Spécialisation sur le frontend avec React"
+            "Spécialisation sur le frontend avec React",
+            "Titre Professionnel DWWM obtenu en mai 2025"
           ]
         }
       ]
@@ -141,11 +156,11 @@
   },
   "about": {
     "title": "À propos de moi",
-    "subtitle": "Développeur Fullstack Javascript junior, avec une expérience de 15+ ans 🤓",
-    "description1": "Je suis actuellement en stage pour 6 mois chez Dcrypte comme développeur après avoir suivi une formation intensive de 6 mois (798 heures) au sein de l'Ecole O'Clock et afin de devenir développeur.",
-    "description2": "Dans mon ancienne expérience qui aura un intérêt pour vous, je peux m'appuyer sur mes 15+ années d’expérience professionnelle sur des postes gravitant autour des domaines de la communication, du marketing digital et du CRM, dont un peu plus de 3 ans en tant que Brand Digital Manager et près de 6 ans à piloter des projets à grande échelle et manager de grandes équipes (30+ personnes).",
-    "description3": "Une expertise digitale développée tout au long de ce parcours couvrant tous ses champs d’application : établissement et pilotage d’une stratégie, coordination de nombreux acteurs techniques et gestion de projets complexes et de dimension internationale, UX design, media planning, audit et reporting, évangélisation et vulgarisation vers le top management.",
-    "description4": "Curieux de tout, autodidacte sur de nombreuses expertises, exigeant et engagé je mets mon expérience et mon sérieux au service des projets et besoins clients en matière de projets digitaux, de communication et d’expérience utilisateur."
+    "subtitle": "Développeur Fullstack Javascript, avec une expérience pré-reconversion de 15+ ans 🤓",
+"description1":"Depuis juillet 2025, je suis développeur en freelance et motivé pour travailler en mode projet ou au sein de votre équipe.",
+"description2":"De novembre 2024 à juin 2025, j'ai été embauché comme développeur junior pour 6 mois dans une startup (développement d'un SaaS et sites web clients) après avoir suivi une formation intensive de 6 mois (798 heures) au sein de l'Ecole O'Clock afin de devenir développeur. J'ai obtenu mon Titre Professionnel Développeur Web et Web Mobile (DWWM) en mai 2025.",
+"description3":"Je peux m'appuyer sur mes 15+ années d’expérience professionnelle sur des postes gravitant autour des domaines de la communication, du marketing digital et du CRM, dont un peu plus de 3 ans en tant que Brand Digital Manager et près de 6 ans à piloter des projets à grande échelle et manager de grandes équipes (30+ personnes).",
+"description4":"Curieux de tout, autodidacte sur de nombreuses expertises, exigeant et engagé je mets mon expérience et mon sérieux au service de vos projets."
   },
   "contact": {
     "title": "Envie de travailler ensemble?",

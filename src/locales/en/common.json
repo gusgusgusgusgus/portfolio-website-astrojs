@@ -24,43 +24,60 @@
     }
   ],
   "hero": {
-    "job_availability": "Available for work in June 2025",
+    "job_availability": "Available for work in January 2026",
     "title": "Augustin Seminel",
     "job_title": "<strong>Web Fullstack Developer</strong> from Paris.",
-    "description": "Specialist in React, NextJS, HTML5, CSS5, JavaScript ES6+, Node.js and WordPress",
+    "description": "Specialist in React, NextJS, HTML5, CSS5, TypeScript, Node.js and WordPress",
     "cta": "Contact me"
   },
   "experience": {
     "title": "Recent work experience",
     "jobs": {
-      "jobs_title": ["Next.js Web Developer",
-        "Retraining to become Fullstack JS Web Developer"],
+      "jobs_title": [
+        "Freelance Web Developer",
+        "Junior Web Developer",
+        "Retraining to become Fullstack JS Web Developer"
+      ],
       "jobs_description": [
         {
-          "title": "Next.js Web Developer",
-          "time": ["November 2024", "June 2025"],
-          "description": "With the CTO and a team of 2 developers, working on design and development of features on clients websites and on the company's SaaS",
+          "title": "Freelance Web Developer",
+          "time": ["July 2025", "Present"],
+          "description": "During summer 2025, I independently developed the e-commerce section of a client's website. Shop built with Next.js, backed by Headless CMS Payload to manage content, prices, promotions and customer order tracking. I'm working until the end of the year on a series of new features for Dcrypte's SaaS (<a href=\"https://www.dcrypte.fr/data-house/\" target=\"_blank\" rel=\"noopener noreferrer\">DataHouse</a>)",
           "list": [
             "Next.js (React)",
             "Payload CMS",
             "PandaCSS",
-            "CI/CD on Vercel",
-            "API integrations (Stripe)"
+            "Local API & REST API",
+            "PostgreSQL, MongoDB",
+            "API integrations (Stripe)",
+            "CI/CD on Azure DevOps"
+          ]
+        },
+        {
+          "title": "Junior Web Developer",
+          "time": ["November 2024", "June 2025"],
+          "description": "In collaboration with the CTO and a team of 2 developers, design and implementation of features on client websites as well as on the company's SaaS.",
+          "list": [
+            "Next.js (React)",
+            "Payload CMS",
+            "PandaCSS",
+            "CI/CD on Vercel"
           ]
         },
         {
           "title": "Retraining to become Fullstack JS Web Developer",
-          "time": ["December 2024", "June 2024"],
-          "description": "Oclock.io school in web development: 798 hours of intensive courses and hands-on challenges during 5 months + end-of-studies project and official Titre Professionnel exam registration. https://www.oclock.io",
+          "time": ["December 2023", "June 2024"],
+          "description": "798 intensive hours over 5 months + end-of-studies project and Professional Title certification. <a href=\"https://www.oclock.io\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.oclock.io</a>",
           "list": [
             "HTML5/CSS3",
-            "Javacript : React.js, Node.js",
+            "Javascript: React.js, Node.js",
             "Git",
-            "POO",
+            "OOP",
             "SQL, Sequelize, MongoDB",
-            "API REST",
+            "REST API",
             "Redis",
-            "Specialization on frontend with React"
+            "Frontend specialization with React",
+            "Professional Title DWWM obtained in May 2025"
           ]
         }
       ]
@@ -137,14 +154,14 @@
       }
     ]
   },
-  "about": {
-    "title": "About me",
-    "subtitle": "Fullstack Javascript junior Developer, with a 15+ years work experience 🤓",
-    "description1": "I am currently working as a Next.js developer for Dcrypte during a 6-month internship after having comme développeur after completing an intensive 6-month training course (798 hours) at the O'Clock school to become a developer.",
-    "description2": "In my previous working experiences, that should be of interest for my future employer, I can rely on 15+ years of hands-on experience and management in global brands Marketing, Communication, Digital and CRM positions, including over 3 years as a Brand Digital Manager and nearly 6 years managing large scale projects and teams (30+ people).",
-    "description3": "My digital expertise covers all fields of application: UX design, media planning, 360 campaigns, audit and reporting, evangelism and top management training. Projects managed went from building a strategy and successfully carrying it out to coordinating various technical stakeholders and being accountable for complex projects with an international spectrum.",
-    "description4": "Being curious about everything and self-taught on numerous expertises, the success of my work relies on a predilection for demanding objectives completion, a strong sense of accountability and a balance between strategic management and operational focus."
-  },
+"about": {
+  "title": "About me",
+  "subtitle": "Fullstack Javascript Developer, with 15+ years of pre-conversion experience 🤓",
+  "description1": "Since July 2025, I've been working as a freelance developer and available to work in your team or as freelance.",
+  "description2": "From November 2024 to June 2025, I was hired as a junior developer for 6 months in a startup (SaaS development and client websites) after completing an intensive 6-month training course (798 hours) at O'Clock School to become a developer. I obtained my Professional Title in Web and Mobile Web Development (DWWM) in May 2025.",
+  "description3": "I can rely on my 15+ years of professional experience in positions around communication, digital marketing and CRM, including over 3 years as a Brand Digital Manager and nearly 6 years managing large-scale projects and teams (30+ people).",
+  "description4": "Curious about everything, self-taught in numerous areas of expertise, demanding and committed, I put my experience and professionalism at the service of your projects."
+},
   "contact": {
     "title": "Want to work together?",
     "subtitle": "I can join your team or work on your project as a freelancer"
