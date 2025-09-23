@@ -1,5 +1,4 @@
 import node from '@astrojs/node'
-import vercel from '@astrojs/vercel'
 import i18n from '@astrolicious/i18n'
 import playformCompress from '@playform/compress'
 import { defineConfig } from 'astro/config'
