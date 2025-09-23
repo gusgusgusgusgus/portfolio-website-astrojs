@@ -124,7 +124,7 @@
       },
       {
         "title": "My Portfolio Website",
-        "description": "To create this portfolio you're currently viewing, I decided to use Astro.js to learn it. A single-page site, fully responsive, with some JavaScript animations. Full TypeScript, initially deployed on Vercel before migrating to my server (O2Switch hosting). Template design by Ana Rangel.",
+        "description": "To create this portfolio you're currently viewing, I decided to use Astro.js to learn this framework. A single-page site, fully responsive, with some JavaScript animations. Full TypeScript, initially deployed on Vercel before migrating to my server (O2Switch hosting). Template design by Ana Rangel.",
         "image": "/src/images/projects/portfolio-augustinseminel-astrojs.png",
         "techs": [
           "Astro",
