@@ -1,27 +1,25 @@
-import { defineConfig } from 'astro/config'
-import { URL } from './src/data/constants'
-
-import tunnel from 'astro-tunnel'
-import icon from 'astro-icon'
+import node from '@astrojs/node'
+import vercel from '@astrojs/vercel'
 import i18n from '@astrolicious/i18n'
-import sitemap from 'astro-sitemap'
 import playformCompress from '@playform/compress'
+import { defineConfig } from 'astro/config'
 import compressor from 'astro-compressor'
-
-import vercel from '@astrojs/vercel';
+import icon from 'astro-icon'
+import sitemap from 'astro-sitemap'
+import tunnel from 'astro-tunnel'
 
 // https://astro.build/config
 
 export default defineConfig({
-  site: URL,
+  site: process.env.SITE_URL,
 
   server: {
-    host: true
+    host: true,
   },
 
   prefetch: {
     prefetchAll: true,
-    defaultStrategy: 'viewport'
+    defaultStrategy: 'viewport',
   },
 
   compressHTML: false,
@@ -31,7 +29,7 @@ export default defineConfig({
     icon(),
     i18n({
       defaultLocale: 'fr',
-      locales: ['fr', 'en']
+      locales: ['fr', 'en'],
     }),
     sitemap({
       canonicalURL: URL,
@@ -41,20 +39,20 @@ export default defineConfig({
         xhtml: true,
         news: false,
         video: false,
-        image: false
+        image: false,
       },
       i18n: {
         defaultLocale: 'fr',
         locales: {
-          fr: 'fr'
-        }
+          fr: 'fr',
+        },
       },
       // Remove trailing slash
       serialize(item) {
         /* eslint-disable-next-line no-param-reassign */
         item.url = item.url.replace(/\/$/g, '')
         return item
-      }
+      },
     }),
     // playformCompress({
     //   HTML: false,
@@ -75,5 +73,8 @@ export default defineConfig({
     // compressor()
   ],
 
-  adapter: vercel()
+  adapter: node({
+    mode: 'standalone',
+  }),
+  base: process.env.BASE,
 })

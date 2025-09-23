@@ -19,13 +19,13 @@ importers:
         version: 8.2.8(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))(rollup@4.52.2)
       '@astrolicious/i18n':
         specifier: ^0.6.2
-        version: 0.6.2(@types/node@24.5.2)(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))(i18next@25.5.2(typescript@5.9.2))(lightningcss@1.30.1)(terser@5.42.0)(yaml@2.8.1)
+        version: 0.6.2(@types/node@24.5.2)(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))(i18next@23.16.8)(lightningcss@1.30.1)(terser@5.42.0)(yaml@2.8.1)
       '@fontsource-variable/montserrat':
         specifier: ^5.2.8
         version: 5.2.8
       '@inox-tools/aik-route-config':
-        specifier: ^0.11.0
-        version: 0.11.0(@types/node@24.5.2)(astro-integration-kit@0.19.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))(lightningcss@1.30.1)(terser@5.42.0)(yaml@2.8.1)
+        specifier: ^0.7.5
+        version: 0.7.5(@types/node@24.5.2)(astro-integration-kit@0.17.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))(lightningcss@1.30.1)(terser@5.42.0)(yaml@2.8.1)
       '@playform/compress':
         specifier: ^0.2.0
         version: 0.2.0(@types/node@24.5.2)(@vercel/functions@2.2.13)(rollup@4.52.2)(typescript@5.9.2)(yaml@2.8.1)
@@ -45,8 +45,8 @@ importers:
         specifier: ^1.1.5
         version: 1.1.5
       astro-integration-kit:
-        specifier: ~0.19.0
-        version: 0.19.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))
+        specifier: ~0.17.0
+        version: 0.17.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))
       astro-seo-schema:
         specifier: ^5.1.0
         version: 5.1.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))(schema-dts@1.1.5)
@@ -57,8 +57,8 @@ importers:
         specifier: ^0.1.8
         version: 0.1.8(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))
       i18next:
-        specifier: ^25.5.2
-        version: 25.5.2(typescript@5.9.2)
+        specifier: ^23.0.0
+        version: 23.16.8
       sanitize.css:
         specifier: ^13.0.0
         version: 13.0.0
@@ -81,6 +81,9 @@ importers:
       husky:
         specifier: ^9.1.7
         version: 9.1.7
+      is-ci:
+        specifier: ^4.1.0
+        version: 4.1.0
       lint-staged:
         specifier: ^16.2.0
         version: 16.2.0
@@ -843,12 +846,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@inox-tools/aik-route-config@0.11.0':
-    resolution: {integrity: sha512-WY4TDvOIWmH7JImC6ytIApP8fQg+mbxtdaic6rVd5fBkBD4ut/4+j4FuJly11Po1MbSN5vyjM+8H4u3B4h/a1g==}
-    peerDependencies:
-      astro: ^5
-      astro-integration-kit: ^0.18 || ^0.19
-
   '@inox-tools/aik-route-config@0.7.5':
     resolution: {integrity: sha512-T45aBAeuUvB0wC1zK8OURHgGj7kbucM8RP9HgbpVtpy4pH0pUmJb/ggRASH+o5Jcg1kyGPqvh6TJqYkVTvhpiw==}
     peerDependencies:
@@ -857,9 +854,6 @@ packages:
 
   '@inox-tools/utils@0.3.1':
     resolution: {integrity: sha512-2ppd/FyGpkRrDpEriLupyBDbw4nYO/3peQlIR905i+cI0XeUQkJ9zgfYaVB/rE59d6yJ3dQbZe1B9sk23oHgpg==}
-
-  '@inox-tools/utils@0.7.0':
-    resolution: {integrity: sha512-mwvDYG21P7uy8JmFTXV5xGocFi2hOx41uai49Sf83HX0bXCYknOyEoouSYRzvoiKP21csRtIFywGwxEjG+TMQg==}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1287,15 +1281,15 @@ packages:
   astro-icon@1.1.5:
     resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
 
+  astro-integration-kit@0.17.0:
+    resolution: {integrity: sha512-fe31CCKmrGYn/kkBd1J4b7P02gEdMdEIFBz14zdAud+YAmJeLtZD6wmrCz3LDau+lE1oM1hQnvmZXVSM/YveKw==}
+    peerDependencies:
+      astro: ^4.12.0 || ^5.0.0-beta
+
   astro-integration-kit@0.18.0:
     resolution: {integrity: sha512-Z0QW5IQjosuKQDEGYYkvUX6EhEtrmE4/oViqWz23QveV8U7AuyFsTdg00WRNPevWZl/5a4lLUeDpv4bCRynRRg==}
     peerDependencies:
       astro: ^4.12.0 || ^5.0.0
-
-  astro-integration-kit@0.19.0:
-    resolution: {integrity: sha512-ftDrem91kJZoenhpJJfRtB29D/bmNglEp2oOXqF1uL5yODZauGIy3tDgIbec0UEMp6tNuky4tfWseUXpej5Dng==}
-    peerDependencies:
-      astro: ^4.14.0 || ^5.0.0
 
   astro-pages@0.3.1:
     resolution: {integrity: sha512-gDp2+JRhTzbNDjeTAP3rgG4i85eLO2z2fuhXJcFxdlkd6A5bpoLDNv1OPZP6K+Sd8sZvGK9wF8hL2icWTZdGqQ==}
@@ -1943,13 +1937,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  i18next@25.5.2:
-    resolution: {integrity: sha512-lW8Zeh37i/o0zVr+NoCHfNnfvVw+M6FQbRp36ZZ/NyHDJ3NJVpp2HhAUyU9WafL5AssymNoOjMRB48mmx2P6Hw==}
-    peerDependencies:
-      typescript: ^5
-    peerDependenciesMeta:
-      typescript:
-        optional: true
+  i18next@23.16.8:
+    resolution: {integrity: sha512-06r/TitrM88Mg5FdUXAKL96dJMzgqLE5dv3ryBAra4KCwD9mJ4ndOTS95ZuymIGoE+2hzfdaMak2X11/es7ZWg==}
 
   iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
@@ -1966,6 +1955,10 @@ packages:
 
   is-arrayish@0.3.4:
     resolution: {integrity: sha512-m6UrgzFVUYawGBh1dUsWR5M2Clqic9RVXC/9f8ceNlv2IcO9j9J/z8UoCLPqtsPBFNzEpfR3xftohbfqDx8EQA==}
+
+  is-ci@4.1.0:
+    resolution: {integrity: sha512-Ab9bQDQ11lWootZUI5qxgN2ZXwxNI5hTwnsvOc1wyxQ7zQ8OkEDw79mI0+9jI3x432NfwbVRru+3noJfXF6lSQ==}
+    hasBin: true
 
   is-docker@3.0.0:
     resolution: {integrity: sha512-eljcgEDlEns/7AXFosB5K/2nCM4P7FQPkGc/DWLy5rmFEWvZayGrik1d9/QIY5nJ4f9YsVvBkA6kJpHn9rISdQ==}
@@ -3156,46 +3149,6 @@ packages:
       yaml:
         optional: true
 
-  vite@7.1.7:
-    resolution: {integrity: sha512-VbA8ScMvAISJNJVbRDTJdCwqQoAareR/wutevKanhR2/1EkoXVZVkkORaYm/tNVCjP/UDTKtcw3bAkwOUdedmA==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': ^20.19.0 || >=22.12.0
-      jiti: '>=1.21.0'
-      less: ^4.0.0
-      lightningcss: ^1.21.0
-      sass: ^1.70.0
-      sass-embedded: ^1.70.0
-      stylus: '>=0.54.8'
-      sugarss: ^5.0.0
-      terser: ^5.16.0
-      tsx: ^4.8.1
-      yaml: ^2.4.2
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      jiti:
-        optional: true
-      less:
-        optional: true
-      lightningcss:
-        optional: true
-      sass:
-        optional: true
-      sass-embedded:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-      tsx:
-        optional: true
-      yaml:
-        optional: true
-
   vitefu@1.1.1:
     resolution: {integrity: sha512-B/Fegf3i8zh0yFbpzZ21amWzHmuNlLlmJT6n7bu5e+pCHUKQIfXSYokrqOBGEMMe9UG2sostKQF9mml/vYaWJQ==}
     peerDependencies:
@@ -3550,13 +3503,13 @@ snapshots:
     dependencies:
       yaml: 2.8.1
 
-  '@astrolicious/i18n@0.6.2(@types/node@24.5.2)(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))(i18next@25.5.2(typescript@5.9.2))(lightningcss@1.30.1)(terser@5.42.0)(yaml@2.8.1)':
+  '@astrolicious/i18n@0.6.2(@types/node@24.5.2)(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))(i18next@23.16.8)(lightningcss@1.30.1)(terser@5.42.0)(yaml@2.8.1)':
     dependencies:
       '@inox-tools/aik-route-config': 0.7.5(@types/node@24.5.2)(astro-integration-kit@0.18.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))(lightningcss@1.30.1)(terser@5.42.0)(yaml@2.8.1)
       astro: 5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)
       astro-integration-kit: 0.18.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))
       astro-pages: 0.3.1(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))
-      i18next: 25.5.2(typescript@5.9.2)
+      i18next: 23.16.8
       sitemap: 7.1.2
       typescript: 5.9.2
       ufo: 1.6.1
@@ -4056,14 +4009,14 @@ snapshots:
   '@img/sharp-win32-x64@0.34.4':
     optional: true
 
-  '@inox-tools/aik-route-config@0.11.0(@types/node@24.5.2)(astro-integration-kit@0.19.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))(lightningcss@1.30.1)(terser@5.42.0)(yaml@2.8.1)':
+  '@inox-tools/aik-route-config@0.7.5(@types/node@24.5.2)(astro-integration-kit@0.17.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))(lightningcss@1.30.1)(terser@5.42.0)(yaml@2.8.1)':
     dependencies:
-      '@inox-tools/utils': 0.7.0
+      '@inox-tools/utils': 0.3.1
       astro: 5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)
-      astro-integration-kit: 0.19.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))
+      astro-integration-kit: 0.17.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1))
       debug: 4.4.3
       recast: 0.23.11
-      vite: 7.1.7(@types/node@24.5.2)(lightningcss@1.30.1)(terser@5.42.0)(yaml@2.8.1)
+      vite: 6.3.6(@types/node@24.5.2)(lightningcss@1.30.1)(terser@5.42.0)(yaml@2.8.1)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -4101,8 +4054,6 @@ snapshots:
       - yaml
 
   '@inox-tools/utils@0.3.1': {}
-
-  '@inox-tools/utils@0.7.0': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -4555,16 +4506,17 @@ snapshots:
       - debug
       - supports-color
 
-  astro-integration-kit@0.18.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)):
+  astro-integration-kit@0.17.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)):
     dependencies:
       astro: 5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)
       pathe: 1.1.2
       recast: 0.23.11
 
-  astro-integration-kit@0.19.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)):
+  astro-integration-kit@0.18.0(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)):
     dependencies:
       astro: 5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)
       pathe: 1.1.2
+      recast: 0.23.11
 
   astro-pages@0.3.1(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(lightningcss@1.30.1)(rollup@4.52.2)(terser@5.42.0)(typescript@5.9.2)(yaml@2.8.1)):
     dependencies:
@@ -5402,11 +5354,9 @@ snapshots:
 
   husky@9.1.7: {}
 
-  i18next@25.5.2(typescript@5.9.2):
+  i18next@23.16.8:
     dependencies:
       '@babel/runtime': 7.28.4
-    optionalDependencies:
-      typescript: 5.9.2
 
   iconv-lite@0.6.3:
     dependencies:
@@ -5419,6 +5369,10 @@ snapshots:
   iron-webcrypto@1.2.1: {}
 
   is-arrayish@0.3.4: {}
+
+  is-ci@4.1.0:
+    dependencies:
+      ci-info: 4.3.0
 
   is-docker@3.0.0: {}
 
@@ -6725,21 +6679,6 @@ snapshots:
       terser: 5.42.0
 
   vite@6.3.6(@types/node@24.5.2)(lightningcss@1.30.1)(terser@5.42.0)(yaml@2.8.1):
-    dependencies:
-      esbuild: 0.25.10
-      fdir: 6.5.0(picomatch@4.0.3)
-      picomatch: 4.0.3
-      postcss: 8.5.6
-      rollup: 4.52.2
-      tinyglobby: 0.2.15
-    optionalDependencies:
-      '@types/node': 24.5.2
-      fsevents: 2.3.3
-      lightningcss: 1.30.1
-      terser: 5.42.0
-      yaml: 2.8.1
-
-  vite@7.1.7(@types/node@24.5.2)(lightningcss@1.30.1)(terser@5.42.0)(yaml@2.8.1):
     dependencies:
       esbuild: 0.25.10
       fdir: 6.5.0(picomatch@4.0.3)
