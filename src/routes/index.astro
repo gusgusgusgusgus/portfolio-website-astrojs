@@ -1,7 +1,6 @@
 ---
 import { t } from 'i18n:astro'
 import OpenGraph from '@components/OpenGraph.astro'
-import { URL } from '@data/constants'
 import Layout from '@layouts/Layout.astro'
 import About from '@pages/_home/About.astro'
 import Contact from '@pages/_home/Contact.astro'
@@ -17,7 +16,7 @@ const options = {
 ---
 
 <Layout options={options}>
-  <OpenGraph information={options} image=`${URL}/og/augustin-seminel-og.png` />
+  <OpenGraph information={options} image=`${process.env.SITE_URL}/og/augustin-seminel-og.png` />
 
   <main>
     <Hero />
