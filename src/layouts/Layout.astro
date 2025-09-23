@@ -1,20 +1,20 @@
 ---
 import I18NHead from '@astrolicious/i18n/components/I18nHead.astro'
 import '@fontsource-variable/montserrat'
-import { Schema } from 'astro-seo-schema'
 import { getHtmlAttrs } from 'i18n:astro'
 import Favicons from '@components/Favicons.astro'
 import Footer from '@components/Footer.astro'
 import Navbar from '@components/Navbar.astro'
 import Social from '@components/Social.astro'
+import { Schema } from 'astro-seo-schema'
 import 'sanitize.css'
 import 'sanitize.css/assets.css'
 import 'sanitize.css/typography.css'
 import '@styles/global.css'
 
+import Analytics from '@vercel/analytics/astro'
 // SpeedInsights and analytics from Vercel
-import SpeedInsights from "@vercel/speed-insights/astro"
-import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from '@vercel/speed-insights/astro'
 
 interface Options {
   title: string

@@ -89,7 +89,7 @@ export class StarField {
           originalX: x, // Guardar la posición original para el efecto de "volver"
           originalY: y,
           alpha: Math.random(), // Opacidad aleatoria
-          speed: Math.random() * 0.005 + 0.002 // Velocidad de variación de la opacidad
+          speed: Math.random() * 0.005 + 0.002, // Velocidad de variación de la opacidad
         })
       }
     }
@@ -186,7 +186,7 @@ export class StarField {
     // Iniciar la observación de cambios en los atributos del <html>
     observer.observe(htmlElement, {
       attributes: true, // Observar solo atributos
-      attributeFilter: ['class'] // Solo observar cambios en la clase
+      attributeFilter: ['class'], // Solo observar cambios en la clase
     })
   }
 

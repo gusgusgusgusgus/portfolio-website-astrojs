@@ -118,7 +118,7 @@ const EASING = {
     if (t < 1) return (c / 2) * t * t + b // Easing hacia adelante
     t-- // Reduce t
     return (-c / 2) * (t * (t - 2) - 1) + b // Easing hacia atrás
-  }) as EasingFunction
+  }) as EasingFunction,
 }
 
 // Clase para animar propiedades

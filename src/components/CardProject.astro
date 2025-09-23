@@ -1,7 +1,7 @@
 ---
+import { Picture } from 'astro:assets'
 import type { ImageMetadata } from 'astro'
 import { Icon } from 'astro-icon/components'
-import { Picture } from 'astro:assets'
 import '@styles/tech-colors.css'
 
 interface Props {
@@ -16,7 +16,17 @@ interface Props {
   preview_url: string
 }
 
-const { src, alt, title, description, techs, code, preview, code_url, preview_url } = Astro.props
+const {
+  src,
+  alt,
+  title,
+  description,
+  techs,
+  code,
+  preview,
+  code_url,
+  preview_url,
+} = Astro.props
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   '/src/images/projects/*.{jpeg,jpg,png}'
