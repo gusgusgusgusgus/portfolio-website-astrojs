@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.astro/
+
+# Cache directories
+.cache/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Public assets (no need to lint)
+public/
+
+# Package manager lock files
+pnpm-lock.yaml
+yarn.lock
+package-lock.json

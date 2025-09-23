@@ -18,25 +18,25 @@ const config = {
           '^@scripts/(.*)$',
           '^@styles/(.*)$',
           '^@/(.*)$',
-          '^.[./].*'
-        ]
-      }
+          '^.[./].*',
+        ],
+      },
     },
     {
       files: '*.{yaml,yml}',
       options: {
         tabWidth: 3,
-        singleQuote: false
-      }
-    }
+        singleQuote: false,
+      },
+    },
   ],
   plugins: [
     'prettier-plugin-astro',
     '@ianvs/prettier-plugin-sort-imports',
-    'prettier-plugin-tailwindcss'
+    'prettier-plugin-tailwindcss',
   ],
   astroAllowShorthand: false,
-  importOrder: []
+  importOrder: [],
 }
 
 export default config
