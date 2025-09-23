@@ -12,10 +12,6 @@ import 'sanitize.css/assets.css'
 import 'sanitize.css/typography.css'
 import '@styles/global.css'
 
-import Analytics from '@vercel/analytics/astro'
-// SpeedInsights and analytics from Vercel
-import SpeedInsights from '@vercel/speed-insights/astro'
-
 interface Options {
   title: string
   description: string
@@ -35,9 +31,6 @@ const { title, description, metaRobots } = options
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <SpeedInsights />
-    <Analytics />
 
     <title>{title}</title>
 
