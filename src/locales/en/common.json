@@ -1,6 +1,6 @@
 {
   "title": "Web Fullstack Developer - Augustin Seminel",
-  "description": "Specialized in React, NextJS, HTML5, CSS5, JavaScript ES6+, Node.js and WordPress.",
+  "description": "Specialized in React, NextJS, HTML5, CSS5, TypeScript, Node.js and WordPress.",
   "navbar": [
     {
       "label": "Home",
@@ -27,7 +27,7 @@
     "job_availability": "Available for work in January 2026",
     "title": "Augustin Seminel",
     "job_title": "<strong>Web Fullstack Developer</strong> from Paris.",
-    "description": "Specialist in React, NextJS, HTML5, CSS5, TypeScript, Node.js and WordPress",
+    "description": "Specialist in React, NextJS, TypeScript, Node.js and WordPress",
     "cta": "Contact me"
   },
   "experience": {
