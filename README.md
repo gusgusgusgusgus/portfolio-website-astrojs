@@ -1,10 +1,10 @@
 # Welcome to my portfolio website project
 
-Based on 🦄 Unicorn Sparkle template from UXCorpRangel
-
-Template: https://unicorn-sparkle.web.app
-
-Designed with ❤️ by [Ana Rangel](https://www.linkedin.com/in/ux-ana-rangel) and developped with 🔥 by [Felix Icaza](https://felixicaza.com).
-
 Based on Astro.js
-I plan on localising two versions, in French and in English
+Localised two versions, in French and in English.
+
+Updating it as soon as I can deploy new cases or need to update professional experiences
+
+Deployed and hosted on O2Switch with Node server
+Analytics with Matomo, hosted on premises
+CI/CD currently on Vercel, being migrated to the new hosting service
