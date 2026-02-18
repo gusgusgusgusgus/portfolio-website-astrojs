@@ -7,7 +7,7 @@
     "astro": "astro",
     "build": "astro check && astro build",
     "dev": "astro dev",
-    "prepare": "is-ci || husky install",
+    "prepare": "is-ci || husky",
     "preview": "astro preview",
     "start": "astro dev",
     "deploy": "npm install --omit=dev --ignore-scripts",
