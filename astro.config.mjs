@@ -31,7 +31,6 @@ export default defineConfig({
       locales: ['fr', 'en'],
     }),
     sitemap({
-      canonicalURL: URL,
       lastmod: new Date(),
       createLinkInHead: false,
       xmlns: {
