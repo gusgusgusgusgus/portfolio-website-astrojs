@@ -2,9 +2,7 @@
   "recommendations": [
     "astro-build.astro-vscode",
     "editorconfig.editorconfig",
-    "dbaeumer.vscode-eslint",
-    "biomejs.biome",
-    "standard.vscode-standard"
+    "biomejs.biome"
   ],
   "unwantedRecommendations": []
 }
