@@ -6,6 +6,7 @@ import Favicons from "@components/Favicons.astro"
 import Footer from "@components/Footer.astro"
 import Navbar from "@components/Navbar.astro"
 import Social from "@components/Social.astro"
+import { links } from "@data/links"
 import { Schema } from "astro-seo-schema"
 import "sanitize.css"
 import "sanitize.css/assets.css"
@@ -141,8 +142,8 @@ const { title, description, metaRobots } = options
             image: 'https://augustinseminel.com/img/augustinseminel.jpg',
             sameAs: [
               'https://augustinseminel.com',
-              'https://www.linkedin.com/in/augustinseminel/',
-              'https://github.com/gusgusgusgusgus'
+              links.linkedin,
+              links.github
             ],
             jobTitle: 'Développeur Web Fullstack'
           }}

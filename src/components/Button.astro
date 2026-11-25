@@ -3,12 +3,19 @@ interface Props {
   href: string
   class?: string
   target?: string
+  "aria-label"?: string
 }
 
-const { href, class: className, target } = Astro.props
+const { href, class: className, target, "aria-label": ariaLabel } = Astro.props
 ---
 
-<a class={className} href={href} target={target}>
+<a
+  class={className}
+  href={href}
+  target={target}
+  rel={target === "_blank" ? "noopener noreferrer" : undefined}
+  aria-label={ariaLabel}
+>
   <slot />
 </a>
 
