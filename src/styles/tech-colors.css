@@ -52,6 +52,79 @@ html {
     color: #000;
     transition: var(--transition-bg), var(--transition-text);
   }
+
+  .nextjs,
+  .vercel {
+    background-color: #404040;
+    transition: var(--transition-bg);
+  }
+
+  .payloadcms,
+  .api-rest,
+  .rest-api {
+    background-color: #2f6b66;
+    transition: var(--transition-bg);
+  }
+
+  .figma {
+    background-color: #7f3248;
+    transition: var(--transition-bg);
+  }
+
+  .pandacss,
+  .node-et-express,
+  .node-and-express {
+    background-color: #3a6b32;
+    transition: var(--transition-bg);
+  }
+
+  .postgresql {
+    background-color: #2a5f7f;
+    transition: var(--transition-bg);
+  }
+
+  .stripe,
+  .redux {
+    background-color: #4b3a8f;
+    transition: var(--transition-bg);
+  }
+
+  .azure-devops,
+  .muicore-design-library {
+    background-color: #1f4f8f;
+    transition: var(--transition-bg);
+  }
+
+  .openstreetmap {
+    background-color: #4a6b2a;
+    transition: var(--transition-bg);
+  }
+
+  .seo {
+    background-color: #5a6b2a;
+    transition: var(--transition-bg);
+  }
+
+  .custom-template {
+    background-color: #616161;
+    transition: var(--transition-bg);
+  }
+
+  .forminator {
+    background-color: #6b4a2a;
+    transition: var(--transition-bg);
+  }
+
+  .sécurité,
+  .security {
+    background-color: #7f3232;
+    transition: var(--transition-bg);
+  }
+
+  .mailchimp {
+    background-color: #7f6932;
+    transition: var(--transition-bg);
+  }
 }
 
 html.dark {
@@ -91,6 +164,66 @@ html.dark {
   }
 
   .firebase {
+    background-color: #ffdd88;
+  }
+
+  .nextjs,
+  .vercel {
+    background-color: #d9d9d9;
+  }
+
+  .payloadcms,
+  .api-rest,
+  .rest-api {
+    background-color: #b5ddd9;
+  }
+
+  .figma {
+    background-color: #ffb5c4;
+  }
+
+  .pandacss,
+  .node-et-express,
+  .node-and-express {
+    background-color: #bfe3b4;
+  }
+
+  .postgresql {
+    background-color: #b3dcee;
+  }
+
+  .stripe,
+  .redux {
+    background-color: #d0c6f5;
+  }
+
+  .azure-devops,
+  .muicore-design-library {
+    background-color: #b0cdf5;
+  }
+
+  .openstreetmap {
+    background-color: #cde3b0;
+  }
+
+  .seo {
+    background-color: #d8e3a8;
+  }
+
+  .custom-template {
+    background-color: #cacaca;
+  }
+
+  .forminator {
+    background-color: #e3cfae;
+  }
+
+  .sécurité,
+  .security {
+    background-color: #f5b9b9;
+  }
+
+  .mailchimp {
     background-color: #ffdd88;
   }
 }
