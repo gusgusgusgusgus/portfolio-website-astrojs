@@ -8,10 +8,10 @@ WORKDIR /app
 FROM base AS build
 # SITE_URL est lu pendant le build (astro.config.mjs + balise og:image)
 ARG SITE_URL
-ENV SITE_URL=$SITE_URL
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .pnpmrc ./
 RUN pnpm install --frozen-lockfile
 COPY . .
+RUN case "$SITE_URL" in https://*) ;; *) echo "ERREUR: SITE_URL doit etre definie au build et commencer par https:// (valeur recue: '$SITE_URL')"; exit 1;; esac
 RUN pnpm build
 
 # --- Dépendances de production ---
