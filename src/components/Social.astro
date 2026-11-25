@@ -1,5 +1,5 @@
 ---
-import { links } from "@data/links"
+import { contactAnchor, links } from "@data/links"
 import { Icon } from "astro-icon/components"
 ---
 
@@ -21,7 +21,7 @@ import { Icon } from "astro-icon/components"
     >
       <Icon name="linkedin" size={28} />
     </a>
-    <a href={links.email} aria-label="Mail">
+    <a href={contactAnchor()} aria-label="Mail">
       <Icon name="mail" size={28} />
     </a>
   </nav>
