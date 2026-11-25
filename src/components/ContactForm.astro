@@ -1,0 +1,276 @@
+---
+import { t } from "i18n:astro"
+
+const form = t("contact.form", { returnObjects: true })
+const endpoint = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/api/contact`
+---
+
+<form
+  class="contact-form"
+  novalidate
+  data-endpoint={endpoint}
+  data-success={form.success}
+  data-error={form.error}
+  data-network={form.network}
+  data-submit={form.submit}
+  data-sending={form.sending}
+>
+  <h4 class="form-title">{form.form_title}</h4>
+
+  <div class="field">
+    <label for="contact-name">{form.name}</label>
+    <input
+      id="contact-name"
+      name="name"
+      type="text"
+      autocomplete="name"
+      maxlength="100"
+      required
+    />
+    <p class="field-error" id="name-error" hidden></p>
+  </div>
+
+  <div class="field">
+    <label for="contact-email">{form.email}</label>
+    <input
+      id="contact-email"
+      name="email"
+      type="email"
+      autocomplete="email"
+      maxlength="254"
+      required
+    />
+    <p class="field-error" id="email-error" hidden></p>
+  </div>
+
+  <div class="field">
+    <label for="contact-message">{form.message}</label>
+    <textarea id="contact-message" name="message" rows="7" maxlength="5000" required
+    ></textarea>
+    <p class="field-error" id="message-error" hidden></p>
+  </div>
+
+  <div class="honeypot" aria-hidden="true">
+    <label for="contact-website">Website</label>
+    <input
+      id="contact-website"
+      name="website"
+      type="text"
+      tabindex="-1"
+      autocomplete="off"
+    />
+  </div>
+
+  <button type="submit" class="submit">{form.submit}</button>
+  <output class="notice" hidden></output>
+</form>
+
+<style>
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 640px;
+    margin: 56px auto 0;
+    text-align: left;
+    position: relative;
+  }
+
+  .form-title {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  label {
+    font-weight: 500;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font: inherit;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    transition: var(--transition-border), var(--transition-bg);
+
+    &:focus-visible {
+      outline: 2px solid var(--text-color);
+      outline-offset: 2px;
+    }
+
+    &[aria-invalid="true"] {
+      border-color: var(--text-color);
+    }
+  }
+
+  textarea {
+    min-height: 160px;
+    resize: vertical;
+  }
+
+  .field-error {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-color);
+
+    &::before {
+      content: "⚠ ";
+    }
+  }
+
+  .honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  /* Même style que le composant Button (variante .filled) */
+  .submit {
+    align-self: center;
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 40px;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 1000px;
+    transition: var(--transition-bg), var(--transition-text);
+
+    &:hover:not(:disabled) {
+      background-color: var(--bg-secondary-color);
+      color: var(--text-color);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--text-color);
+      outline-offset: 2px;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: progress;
+    }
+  }
+
+  .notice {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+
+    &[hidden] {
+      display: none;
+    }
+
+    &[data-status="success"] {
+      background-color: var(--bg-secondary-color);
+      border-color: var(--text-color);
+    }
+
+    &[data-status="error"] {
+      background-color: var(--bg-card-contributions);
+      border-style: dashed;
+      border-color: var(--text-color);
+    }
+  }
+</style>
+
+<script>
+  type Fields = "name" | "email" | "message"
+  const FIELDS: Fields[] = ["name", "email", "message"]
+
+  const form = document.querySelector<HTMLFormElement>(".contact-form")
+
+  if (form) {
+    const button = form.querySelector<HTMLButtonElement>(".submit")
+    const notice = form.querySelector<HTMLOutputElement>(".notice")
+    const { endpoint, success, error, network, submit, sending } = form.dataset
+    let status: "idle" | "loading" | "success" | "error" = "idle"
+
+    const setStatus = (next: typeof status, message = "") => {
+      status = next
+      if (button) {
+        button.disabled = next === "loading"
+        button.textContent = next === "loading" ? (sending ?? "") : (submit ?? "")
+      }
+      if (notice) {
+        notice.hidden = !message
+        notice.textContent = message
+        notice.dataset.status = next
+      }
+    }
+
+    const clearErrors = () => {
+      for (const name of FIELDS) {
+        const input = form.elements.namedItem(name) as HTMLElement | null
+        const p = form.querySelector<HTMLElement>(`#${name}-error`)
+        input?.removeAttribute("aria-invalid")
+        input?.removeAttribute("aria-describedby")
+        if (p) {
+          p.hidden = true
+          p.textContent = ""
+        }
+      }
+    }
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault()
+      if (status === "loading") return
+      clearErrors()
+      setStatus("loading")
+
+      try {
+        const response = await fetch(endpoint ?? "", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        })
+        const result = await response.json().catch(() => ({}))
+
+        if (response.ok) {
+          form.reset()
+          setStatus("success", success)
+          return
+        }
+
+        const errors: Partial<Record<Fields, string>> = result.errors ?? {}
+        let firstInvalid: HTMLElement | null = null
+        for (const name of FIELDS) {
+          const message = errors[name]
+          if (!message) continue
+          const input = form.elements.namedItem(name) as HTMLElement | null
+          const p = form.querySelector<HTMLElement>(`#${name}-error`)
+          input?.setAttribute("aria-invalid", "true")
+          input?.setAttribute("aria-describedby", `${name}-error`)
+          if (p) {
+            p.textContent = message
+            p.hidden = false
+          }
+          firstInvalid ??= input
+        }
+        firstInvalid?.focus()
+        setStatus("error", result.error || error)
+      } catch {
+        setStatus("error", network)
+      }
+    })
+  }
+</script>

@@ -1,7 +1,7 @@
 import node from "@astrojs/node"
 import sitemap from "@astrojs/sitemap"
 import i18n from "@astrolicious/i18n"
-import { defineConfig } from "astro/config"
+import { defineConfig, envField } from "astro/config"
 import icon from "astro-icon"
 import tunnel from "astro-tunnel"
 
@@ -12,6 +12,26 @@ export default defineConfig({
 
   server: {
     host: true,
+  },
+
+  env: {
+    schema: {
+      RESEND_API_KEY: envField.string({
+        context: "server",
+        access: "secret",
+        optional: true,
+      }),
+      CONTACT_TO_EMAIL: envField.string({
+        context: "server",
+        access: "secret",
+        optional: true,
+      }),
+      CONTACT_FROM_EMAIL: envField.string({
+        context: "server",
+        access: "secret",
+        optional: true,
+      }),
+    },
   },
 
   prefetch: {
