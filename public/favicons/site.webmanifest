@@ -2,18 +2,10 @@
   "name": "Augustin Seminel",
   "short_name": "Augustin Seminel",
   "icons": [
-    {
-      "src": "/favicons/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
-    },
-    {
-      "src": "/favicons/corgi-favicon.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+    { "src": "/favicons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicons/icon-512.png", "sizes": "512x512", "type": "image/png" }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#0f0e0e",
   "background_color": "#ffffff",
   "display": "standalone"
 }
