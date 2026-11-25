@@ -6,7 +6,6 @@ settings:
 
 overrides:
   vite@<6.4.4: ^6.4.6
-  minimatch@<11.0.1: ^11.0.1
 
 importers:
 
@@ -18,6 +17,9 @@ importers:
       '@astrojs/node':
         specifier: ^11.1.14
         version: 11.1.14(astro@7.4.13(@types/node@26.6.6)(@vercel/functions@2.2.13)(esbuild@0.28.2)(terser@5.51.4)(yaml@2.9.1))
+      '@astrojs/sitemap':
+        specifier: ^3.7.6
+        version: 3.7.6
       '@astrolicious/i18n':
         specifier: ^0.6.3
         version: 0.6.3(@types/node@26.6.6)(astro@7.4.13(@types/node@26.6.6)(@vercel/functions@2.2.13)(esbuild@0.28.2)(terser@5.51.4)(yaml@2.9.1))(i18next@26.7.2(typescript@5.9.3))(lightningcss@1.33.0)(terser@5.51.4)(yaml@2.9.1)
@@ -39,9 +41,6 @@ importers:
       astro-seo-schema:
         specifier: ^5.2.0
         version: 5.2.0(astro@7.4.13(@types/node@26.6.6)(@vercel/functions@2.2.13)(esbuild@0.28.2)(terser@5.51.4)(yaml@2.9.1))(schema-dts@1.1.5)
-      astro-sitemap:
-        specifier: ^1.0.0
-        version: 1.0.0
       astro-tunnel:
         specifier: ^0.1.9
         version: 0.1.9(astro@7.4.13(@types/node@26.6.6)(@vercel/functions@2.2.13)(esbuild@0.28.2)(terser@5.51.4)(yaml@2.9.1))
@@ -192,6 +191,9 @@ packages:
 
   '@astrojs/runtime@0.1.2':
     resolution: {integrity: sha512-qLNoKPjASZmKtkvQNYqax7DHIe5+0TC1PX8n2AkA87Bv+JxiaFZtPepdm0lwcRbL/jLoiRvHXVCliFC1CRFQxA==}
+
+  '@astrojs/sitemap@3.7.6':
+    resolution: {integrity: sha512-QEKD3ubC0iJxpNzC4KvcKdxSP97U5SjuQ16+VkmUwx1TT+Hq7TIV8QGm/d2pvkN6+3GqGXLRzm7j6lZxHETm3A==}
 
   '@astrojs/telemetry@3.4.2':
     resolution: {integrity: sha512-2JOMRUxJrBSfiVDfeKLv1wBmvSIx1Y6u2YEO8awZ9qSq3u/rNAiUyFdOYi8dHv91kHrmYEQX7pRDw0J4xyj3UA==}
@@ -915,9 +917,6 @@ packages:
   '@inox-tools/utils@0.3.1':
     resolution: {integrity: sha512-2ppd/FyGpkRrDpEriLupyBDbw4nYO/3peQlIR905i+cI0XeUQkJ9zgfYaVB/rE59d6yJ3dQbZe1B9sk23oHgpg==}
 
-  '@isaacs/nonrecursive-glob-match@1.1.0':
-    resolution: {integrity: sha512-GPm/Dbvk5RLmhRnxXIa7nTpK0xtl4E0wj0MslsuNiJ1FIROU+2+9lgUC/dgF7Ey4QCWhfEsgxilMRMCdHPfDfw==}
-
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
 
@@ -1524,9 +1523,6 @@ packages:
       astro: ^5.0.0
       schema-dts: ^1.1.0
 
-  astro-sitemap@1.0.0:
-    resolution: {integrity: sha512-N4cbJplN/eeP+V3I9ndbpWdr82oyjxRSqAp9yP2RetbvrnvHeDiJ9THLtRuvqw/UkvH94AToVfzpVBe+/4ZHXA==}
-
   astro-tunnel@0.1.9:
     resolution: {integrity: sha512-2bWtccadWLn/AN5feiO2hHTlltBS/Pl+Fft9DbmYjrApKMu6klHTfQEZ527IhavEQRZOVYT7ZZMLtPFglz04yg==}
     peerDependencies:
@@ -1549,16 +1545,8 @@ packages:
   bail@2.0.2:
     resolution: {integrity: sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw==}
 
-  balanced-match@4.0.4:
-    resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
-    engines: {node: 18 || 20 || >=22}
-
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
-
-  brace-expansion@5.1.0:
-    resolution: {integrity: sha512-aa11Dv491GKnYqxaul3aRJ0szew7yMJMfZPnqD44NjGrZXoj62l41OEDDpdpC4eE2P88vBFfLuSyRhpG91NUvg==}
-    engines: {node: 20 || >=22}
 
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
@@ -2075,10 +2063,6 @@ packages:
     resolution: {integrity: sha512-VP79XUPxV2CigYP3jWwAUFSku2aKqBH7uTAapFWCBqutsbmDo96KY5o8uh6U+/YSIn5OxJnXp73beVkpqMIGhA==}
     engines: {node: '>=18'}
 
-  minimatch@11.0.9:
-    resolution: {integrity: sha512-KCFkfyjqerNlSstjlhIGNXIKZGA/6O4V4RlhZ+Dsr621SPPw0mzlypE9D9ZOoPiVefHID+j7/XuMMlqfD/F60Q==}
-    engines: {node: 20 || >=22}
-
   modern-tar@0.8.6:
     resolution: {integrity: sha512-LYSks0tNVqbtez/9OB0YFP6qLRSqkdAxJWOQpVaR67lNTbj2zNLyYpowkRMia5lXLCZKzxwoxkxH2MbbBR2aEg==}
     engines: {node: '>=18.0.0'}
@@ -2327,6 +2311,11 @@ packages:
   sisteransi@2.0.0:
     resolution: {integrity: sha512-2WCqLdt12eN6ehLI50S2/ZxoowXU3DD1KVPRyVP0WEsFahrGZZmCdq1K59qjJljMRIDTwx1D9YaRK+hDneBUMg==}
     engines: {node: '>=20'}
+
+  sitemap@10.0.0:
+    resolution: {integrity: sha512-KSjl4H4KBEnGX5KXgzInPAycdOFhwLar0EmksDcYn6NqW2O+zLiMGeV2THE6tpuv3LCVdv+6xsSo2SWLGaBDKw==}
+    engines: {node: '>=22.22.1', npm: '>=10.8.2'}
+    hasBin: true
 
   sitemap@7.1.3:
     resolution: {integrity: sha512-tAjEd+wt/YwnEbfNB2ht51ybBJxbEWwe5ki/Z//Wh0rpBFTCUSj46GnxUKEWzhfuJTsee8x3lybHxFgUMig2hw==}
@@ -2796,9 +2785,6 @@ packages:
     resolution: {integrity: sha512-4LCcse/U2MHZ63HAJVE+v71o7yOdIe4cZ70Wpf8D/IyjDKYQLV5GD46B+hSTjJsvV5PztjvHoU580EftxjDZFQ==}
     engines: {node: '>=12.20'}
 
-  zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
-
   zod@4.6.7:
     resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
@@ -2943,6 +2929,11 @@ snapshots:
     dependencies:
       '@oslojs/encoding': 1.1.0
       clsx: 2.1.1
+
+  '@astrojs/sitemap@3.7.6':
+    dependencies:
+      sitemap: 10.0.0
+      zod: 4.6.7
 
   '@astrojs/telemetry@3.4.2':
     dependencies:
@@ -3503,8 +3494,6 @@ snapshots:
 
   '@inox-tools/utils@0.3.1': {}
 
-  '@isaacs/nonrecursive-glob-match@1.1.0': {}
-
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
       '@jridgewell/sourcemap-codec': 1.6.0
@@ -3975,12 +3964,6 @@ snapshots:
       astro: 7.4.13(@types/node@26.6.6)(@vercel/functions@2.2.13)(esbuild@0.28.2)(terser@5.51.4)(yaml@2.9.1)
       schema-dts: 1.1.5
 
-  astro-sitemap@1.0.0:
-    dependencies:
-      minimatch: 11.0.9
-      sitemap: 7.1.3
-      zod: 3.25.76
-
   astro-tunnel@0.1.9(astro@7.4.13(@types/node@26.6.6)(@vercel/functions@2.2.13)(esbuild@0.28.2)(terser@5.51.4)(yaml@2.9.1)):
     dependencies:
       astro: 7.4.13(@types/node@26.6.6)(@vercel/functions@2.2.13)(esbuild@0.28.2)(terser@5.51.4)(yaml@2.9.1)
@@ -4079,13 +4062,7 @@ snapshots:
 
   bail@2.0.2: {}
 
-  balanced-match@4.0.4: {}
-
   boolbase@1.0.0: {}
-
-  brace-expansion@5.1.0:
-    dependencies:
-      balanced-match: 4.0.4
 
   braces@3.0.3:
     dependencies:
@@ -4590,11 +4567,6 @@ snapshots:
 
   mimic-function@5.0.1: {}
 
-  minimatch@11.0.9:
-    dependencies:
-      '@isaacs/nonrecursive-glob-match': 1.1.0
-      brace-expansion: 5.1.0
-
   modern-tar@0.8.6: {}
 
   mri@1.2.0: {}
@@ -4921,6 +4893,12 @@ snapshots:
   signal-exit@4.1.0: {}
 
   sisteransi@2.0.0: {}
+
+  sitemap@10.0.0:
+    dependencies:
+      '@types/node': 26.6.6
+      '@types/sax': 1.2.7
+      sax: 1.6.1
 
   sitemap@7.1.3:
     dependencies:
@@ -5300,8 +5278,6 @@ snapshots:
       yargs-parser: 22.0.0
 
   yocto-queue@1.2.2: {}
-
-  zod@3.25.76: {}
 
   zod@4.6.7: {}
 

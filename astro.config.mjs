@@ -1,8 +1,8 @@
 import node from "@astrojs/node"
+import sitemap from "@astrojs/sitemap"
 import i18n from "@astrolicious/i18n"
 import { defineConfig } from "astro/config"
 import icon from "astro-icon"
-import sitemap from "astro-sitemap"
 import tunnel from "astro-tunnel"
 
 // https://astro.build/config
@@ -30,13 +30,6 @@ export default defineConfig({
     }),
     sitemap({
       lastmod: new Date(),
-      createLinkInHead: false,
-      xmlns: {
-        xhtml: true,
-        news: false,
-        video: false,
-        image: false,
-      },
       i18n: {
         defaultLocale: "fr",
         locales: {
