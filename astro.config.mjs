@@ -1,11 +1,11 @@
-import node from '@astrojs/node'
-import i18n from '@astrolicious/i18n'
-import playformCompress from '@playform/compress'
-import { defineConfig } from 'astro/config'
-import compressor from 'astro-compressor'
-import icon from 'astro-icon'
-import sitemap from 'astro-sitemap'
-import tunnel from 'astro-tunnel'
+import node from "@astrojs/node"
+import i18n from "@astrolicious/i18n"
+import playformCompress from "@playform/compress"
+import { defineConfig } from "astro/config"
+import compressor from "astro-compressor"
+import icon from "astro-icon"
+import sitemap from "astro-sitemap"
+import tunnel from "astro-tunnel"
 
 // https://astro.build/config
 
@@ -18,7 +18,7 @@ export default defineConfig({
 
   prefetch: {
     prefetchAll: true,
-    defaultStrategy: 'viewport',
+    defaultStrategy: "viewport",
   },
 
   compressHTML: false,
@@ -27,8 +27,8 @@ export default defineConfig({
     tunnel(),
     icon(),
     i18n({
-      defaultLocale: 'fr',
-      locales: ['fr', 'en'],
+      defaultLocale: "fr",
+      locales: ["fr", "en"],
     }),
     sitemap({
       lastmod: new Date(),
@@ -40,15 +40,15 @@ export default defineConfig({
         image: false,
       },
       i18n: {
-        defaultLocale: 'fr',
+        defaultLocale: "fr",
         locales: {
-          fr: 'fr',
+          fr: "fr",
         },
       },
       // Remove trailing slash
       serialize(item) {
         /* eslint-disable-next-line no-param-reassign */
-        item.url = item.url.replace(/\/$/g, '')
+        item.url = item.url.replace(/\/$/g, "")
         return item
       },
     }),
@@ -72,7 +72,7 @@ export default defineConfig({
   ],
 
   adapter: node({
-    mode: 'standalone',
+    mode: "standalone",
   }),
   base: process.env.BASE,
 })

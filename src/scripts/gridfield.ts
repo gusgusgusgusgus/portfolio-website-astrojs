@@ -15,10 +15,10 @@ export class GridField {
 
   constructor(canvas: HTMLCanvasElement) {
     this.canvas = canvas // Asigna el canvas recibido
-    this.context = this.canvas.getContext('2d') // Obtiene el contexto 2D
+    this.context = this.canvas.getContext("2d") // Obtiene el contexto 2D
 
     this.resizeCanvas() // Redimensiona el canvas al inicio
-    window.addEventListener('resize', this.handleResize.bind(this)) // Añade un evento para redimensionar
+    window.addEventListener("resize", this.handleResize.bind(this)) // Añade un evento para redimensionar
 
     this.initGrid() // Inicializa la cuadrícula
   }
@@ -176,13 +176,13 @@ class GridLine extends Animatable {
 
   // Método para dibujar la línea
   draw(progress: number): void {
-    const x = this._getAnimatedProperty('x', progress, this.startX) // Obtiene la posición animada en X
-    const y = this._getAnimatedProperty('y', progress, this.startY) // Obtiene la posición animada en Y
+    const x = this._getAnimatedProperty("x", progress, this.startX) // Obtiene la posición animada en X
+    const y = this._getAnimatedProperty("y", progress, this.startY) // Obtiene la posición animada en Y
 
     this.context.beginPath() // Comienza un nuevo camino
     this.context.moveTo(this.startX, this.startY) // Mueve a la posición inicial
     this.context.lineTo(x, y) // Dibuja la línea hasta la posición animada
-    this.context.strokeStyle = 'rgba(128, 128, 128, 0.44)' // Color de las líneas
+    this.context.strokeStyle = "rgba(128, 128, 128, 0.44)" // Color de las líneas
     this.context.stroke() // Dibuja la línea en el canvas
   }
 }

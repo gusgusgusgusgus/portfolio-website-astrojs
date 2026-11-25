@@ -35,11 +35,11 @@ export class StarField {
   private canvasHeight: number
 
   // Color de las estrellas (blanco por defecto)
-  private starColor = '255, 255, 255'
+  private starColor = "255, 255, 255"
 
   constructor(canvas: HTMLCanvasElement) {
     this.canvas = canvas
-    this.context = this.canvas?.getContext('2d') ?? null
+    this.context = this.canvas?.getContext("2d") ?? null
 
     // Asignar dimensiones del canvas
     this.canvasWidth = this.getCanvasWidth()
@@ -53,11 +53,11 @@ export class StarField {
       this.addEventListeners() // Añadir eventos de mouse
       this.observeThemeChanges() // Observar cambios en el tema (clase 'dark' en la etiqueta <html>)
     } else {
-      console.error('El contexto 2D no se pudo obtener.')
+      console.error("El contexto 2D no se pudo obtener.")
     }
 
     // Añadir evento para redimensionar el canvas al cambiar el tamaño de la ventana
-    window.addEventListener('resize', this.onResize.bind(this), false)
+    window.addEventListener("resize", this.onResize.bind(this), false)
   }
 
   // Obtener el ancho del canvas
@@ -141,11 +141,11 @@ export class StarField {
   // Añadir eventos de mouse: mover y salir del área del canvas
   private addEventListeners(): void {
     this.canvas.parentElement?.addEventListener(
-      'mousemove',
+      "mousemove",
       this.onMouseMove.bind(this)
     )
     this.canvas.parentElement?.addEventListener(
-      'mouseleave',
+      "mouseleave",
       this.onMouseLeave.bind(this)
     )
   }
@@ -186,7 +186,7 @@ export class StarField {
     // Iniciar la observación de cambios en los atributos del <html>
     observer.observe(htmlElement, {
       attributes: true, // Observar solo atributos
-      attributeFilter: ['class'], // Solo observar cambios en la clase
+      attributeFilter: ["class"], // Solo observar cambios en la clase
     })
   }
 
@@ -194,10 +194,10 @@ export class StarField {
   private updateStarColor(): void {
     const htmlElement = document.documentElement
 
-    if (htmlElement.classList.contains('dark')) {
-      this.starColor = '0, 0, 0' // Negro si la clase 'dark' está presente
+    if (htmlElement.classList.contains("dark")) {
+      this.starColor = "0, 0, 0" // Negro si la clase 'dark' está presente
     } else {
-      this.starColor = '255, 255, 255' // Blanco si no está presente
+      this.starColor = "255, 255, 255" // Blanco si no está presente
     }
   }
 }
