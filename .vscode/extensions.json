@@ -3,7 +3,7 @@
     "astro-build.astro-vscode",
     "editorconfig.editorconfig",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
+    "biomejs.biome",
     "standard.vscode-standard"
   ],
   "unwantedRecommendations": []
