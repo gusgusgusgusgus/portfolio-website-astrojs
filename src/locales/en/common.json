@@ -54,7 +54,7 @@
         {
           "title": "Freelance Web Developer",
           "time": ["July 2025", "Present"],
-          "description": "During summer 2025, I independently developed the e-commerce section of a client's website. Shop built with Next.js, backed by Headless CMS Payload to manage content, prices, promotions and customer order tracking. I then worked from September 2025 to February 2026 on a series of new features for Dcrypte's SaaS <a href=\"https://www.dcrypte.fr/data-house/\" target=\"_blank\" rel=\"noopener noreferrer\">Datahouse</a>. I am building apps and website for clients since",
+          "description": "During summer 2025, I independently developed the e-commerce section of a client's website. Shop built with Next.js, backed by Headless CMS Payload to manage content, prices, promotions and customer order tracking. I then worked from September 2025 to February 2026 on a series of new features for Dcrypte's SaaS <a href=\"https://www.dcrypte.fr/data-house/\" target=\"_blank\" rel=\"noopener noreferrer\">Datahouse</a>. I am building apps and website for clients since.",
           "list": [
             "Next.js (React)",
             "Payload CMS",
