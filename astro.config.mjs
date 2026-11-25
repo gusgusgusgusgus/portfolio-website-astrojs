@@ -1,8 +1,6 @@
 import node from "@astrojs/node"
 import i18n from "@astrolicious/i18n"
-import playformCompress from "@playform/compress"
 import { defineConfig } from "astro/config"
-import compressor from "astro-compressor"
 import icon from "astro-icon"
 import sitemap from "astro-sitemap"
 import tunnel from "astro-tunnel"

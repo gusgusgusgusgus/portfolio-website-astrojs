@@ -2,3 +2,6 @@ allowBuilds:
   "@biomejs/biome": true
   esbuild: true
   sharp: true
+overrides:
+  "vite@<6.4.4": "^6.4.6"
+  "minimatch@<11.0.1": "^11.0.1"
