@@ -1,6 +1,6 @@
 {
-  "title": "Développeur Web Fullstack - Augustin Seminel",
-  "description": "Spécialisé en React, NextJS, HTML5, CSS5, TypeScript, Node.js et WordPress.",
+  "title": "Product Manager & Développeur Web Fullstack - Augustin Seminel",
+  "description": "Je vous aide à concevoir, construire et optimiser vos produits et projets tech.",
   "navbar": [
     {
       "label": "Accueil",
@@ -26,23 +26,35 @@
   "hero": {
     "job_availability": "Disponible pour travailler",
     "title": "Augustin Seminel",
-    "job_title": "<strong>Développeur web fullstack</strong> à Paris.",
-    "description": "Spécialisé en React, NextJS, Typescript, Node.js et WordPress.",
+    "job_title": "<strong>Product Manager</strong> et <strong>Développeur web fullstack</strong> à Paris.",
+    "description": "Je vous aide à concevoir, construire et optimiser vos produits et projets tech.",
     "cta": "Me contacter"
   },
   "experience": {
     "title": "Expérience récente",
     "jobs": {
       "jobs_title": [
+        "Product Manager & Builder",
         "Développeur Web freelance",
         "Développeur Web junior",
         "Formation Développeur Web Oclock.io"
       ],
       "jobs_description": [
         {
+          "title": "Product Manager & Builder",
+          "time": ["Août 2026", "Maintenant"],
+          "description": "Product Management : Discovery et Delivery en cours, Growth & Scale à venir :-).<br>Développement en autonomie du site de l'association (https://tndm.fr) et de l'app (https://chatvote.org/) en frameworks Javascript récents (Next & Astro).<br>Minimalisation de la data récoltée et utilisée, sécurisation par design, réduction des dépendances, simplification.<br>TDD, audits et boucles d'amélioration.<br>Uniformisation de la charte graphique et conception de l'UX/UI sur les deux interfaces.<br>Mise en place des politiques de confidentialité, etc.<br>Interfaçage avec <a href=\"https://www.zaq.ai/\" target=\"_blank\" rel=\"noopener noreferrer\">ZAQ AI</a> pour la gestion du chat.",
+          "list": [
+            "Astro & Next.js (React)",
+            "Typescript",
+            "PostgreSQL",
+            "OCR, ETL & RAG pour le chat"
+          ]
+        },
+        {
           "title": "Développeur Web freelance",
           "time": ["Juillet 2025", "Maintenant"],
-          "description": "Durant l'été 2025 j'ai développé en autonomie la section e-commerce du site d'un client. Boutique développée en Next.js, adossée au Headless CMS Payload pour en gérer le contenu, les prix, promotions et le suivi des commandes clients. Je travaille jusqu'à la fin de l'année sur une série de nouvelles features pour le SaaS de Dcrypte DataHouse (https://www.dcrypte.fr/data-house/)",
+          "description": "Durant l'été 2025 j'ai développé en autonomie la section e-commerce du site d'un client. Boutique développée en Next.js, adossée au Headless CMS Payload pour en gérer le contenu, les prix, promotions et le suivi des commandes clients. J'ai ensuite travaillé de septembre 2025 jusqu'à février 2026 sur une série de nouvelles features pour le SaaS <a href=\"https://www.dcrypte.fr/data-house/\" target=\"_blank\" rel=\"noopener noreferrer\">Datahouse</a> de Dcrypte. Je crée des sites pour des clients depuis.",
           "list": [
             "Next.js (React)",
             "Payload CMS",
@@ -214,11 +226,11 @@
   },
   "about": {
     "title": "À propos de moi",
-    "subtitle": "Développeur Fullstack Javascript, avec une expérience pré-reconversion de 15+ ans 🤓",
-    "description1": "Depuis juillet 2025, je suis développeur en freelance et motivé pour travailler en mode projet ou au sein de votre équipe.",
-    "description2": "De novembre 2024 à juin 2025, j'ai été embauché comme développeur junior pour 6 mois dans une startup (développement d'un SaaS et sites web clients) après avoir suivi une formation intensive de 6 mois (798 heures) au sein de l'Ecole O'Clock afin de devenir développeur. J'ai obtenu mon Titre Professionnel Développeur Web et Web Mobile (DWWM) en mai 2025.",
-    "description3": "Je peux m'appuyer sur mes 15+ années d’expérience professionnelle sur des postes gravitant autour des domaines de la communication, du marketing digital et du CRM, dont un peu plus de 3 ans en tant que Brand Digital Manager et près de 6 ans à piloter des projets à grande échelle et manager de grandes équipes (30+ personnes).",
-    "description4": "Curieux de tout, autodidacte sur de nombreuses expertises, exigeant et engagé je mets mon expérience et mon sérieux au service de vos projets."
+    "subtitle": "",
+    "description1": "Je suis Product Manager avec plus de 15 ans d'expérience en pilotage de projets et produits digitaux (agences, annonceurs, SaaS), doublée d'une compétence rare de développeur fullstack (TypeScript, React, Next.js) acquise via une reconversion approfondie.",
+    "description2": "Habitué à porter un produit de la recherche utilisateur et de la conception (UX/UI, specs, roadmap) jusqu'à la mise en production, en autonomie ou à la tête d'équipes pluridisciplinaires.",
+    "description3": "Depuis juillet 2025, je suis développeur en freelance et motivé pour travailler en mode projet ou au sein de votre équipe.",
+    "description4": "Curieux de tout, autodidacte sur de nombreuses expertises, exigeant et engagé, je mets cette double compétence business/tech au service de vos projets. Ouvert aux opportunités de Product Manager, en particulier sur des environnements où la proximité avec la tech fait la différence."
   },
   "contact": {
     "title": "Envie de travailler ensemble?",
