@@ -5,6 +5,6 @@ Localised two versions, in French and in English.
 
 Updating it as soon as I can deploy new cases or need to update professional experiences
 
-Deployed and hosted on O2Switch with Node server
+Deployed and hosted on Hostinger VPS, with Node server
 Analytics with Matomo, hosted on premises
-CI/CD currently on Vercel, being migrated to the new hosting service
+CI/CD in migration to the new hosting service
