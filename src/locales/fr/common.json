@@ -234,9 +234,8 @@
   },
   "contact": {
     "title": "Envie de travailler ensemble?",
-    "subtitle": "Je peux intégrer votre équipe ou travailler en freelance sur votre projet",
+    "subtitle": "Je peux intégrer votre équipe<br>ou travailler en freelance sur votre projet",
     "form": {
-      "form_title": "Vous pouvez m'écrire ici:",
       "name": "Votre nom",
       "email": "Votre email, pour vous recontacter",
       "message": "Votre message",

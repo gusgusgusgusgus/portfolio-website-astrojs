@@ -234,9 +234,8 @@
   },
   "contact": {
     "title": "Want to work together?",
-    "subtitle": "I can join your team or work on your project as a freelancer",
+    "subtitle": "I can join your team<br>or work on your project as a freelancer. </br>You can contact me from here:",
     "form": {
-      "form_title": "Or write to me directly",
       "name": "Your name",
       "email": "Your email, so I can get back to you",
       "message": "Your message",
