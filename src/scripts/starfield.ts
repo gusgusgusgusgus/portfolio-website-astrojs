@@ -195,9 +195,9 @@ export class StarField {
     const htmlElement = document.documentElement
 
     if (htmlElement.classList.contains("dark")) {
-      this.starColor = "0, 0, 0" // Negro si la clase 'dark' está presente
+      this.starColor = "255, 255, 255" // Blanco en thème sombre
     } else {
-      this.starColor = "255, 255, 255" // Blanco si no está presente
+      this.starColor = "0, 0, 0" // Noir en thème clair
     }
   }
 }

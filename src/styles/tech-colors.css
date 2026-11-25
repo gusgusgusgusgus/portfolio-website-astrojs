@@ -1,49 +1,166 @@
 html {
-  .astro,
+  .astro {
+    background-color: #ffbc96;
+    transition: var(--transition-bg);
+  }
+
   .html {
-    background-color: #7f4932;
+    background-color: #ffbc96;
     transition: var(--transition-bg);
   }
 
   .css {
-    background-color: #324b7f;
+    background-color: #1c80bf5e;
     transition: var(--transition-bg);
   }
 
-  .tailwindcss,
-  .typescript,
+  .tailwindcss {
+    background-color: #bddaff;
+    transition: var(--transition-bg);
+  }
+
+  .typescript {
+    background-color: #bddaff;
+    transition: var(--transition-bg);
+  }
+
   .react {
-    background-color: #32547f;
+    background-color: #bddaff;
     transition: var(--transition-bg);
   }
 
   .sass {
-    background-color: #602957;
+    background-color: color-mix(in srgb, #602957, #fff 70%);
     transition: var(--transition-bg);
   }
 
   .open-props {
-    background-color: #3a4367;
+    background-color: #c1cbf1;
     transition: var(--transition-bg);
   }
 
   .javascript {
-    background-color: #665e24;
+    background-color: #e2da9a;
     transition: var(--transition-bg);
   }
 
   .php {
-    background-color: #616161;
+    background-color: #cacaca;
     transition: var(--transition-bg);
   }
 
   .wordpress {
-    background-color: #3a4367;
+    background-color: #b1b8d1;
     transition: var(--transition-bg);
   }
 
   .firebase {
-    background-color: #7f6932;
+    background-color: #ffdd88;
+    transition: var(--transition-bg);
+  }
+
+  .nextjs {
+    background-color: #d9d9d9;
+    transition: var(--transition-bg);
+  }
+
+  .vercel {
+    background-color: #d9d9d9;
+    transition: var(--transition-bg);
+  }
+
+  .payloadcms {
+    background-color: #b5ddd9;
+    transition: var(--transition-bg);
+  }
+
+  .api-rest {
+    background-color: #b5ddd9;
+    transition: var(--transition-bg);
+  }
+
+  .rest-api {
+    background-color: #b5ddd9;
+    transition: var(--transition-bg);
+  }
+
+  .figma {
+    background-color: #ffb5c4;
+    transition: var(--transition-bg);
+  }
+
+  .pandacss {
+    background-color: #bfe3b4;
+    transition: var(--transition-bg);
+  }
+
+  .node-et-express {
+    background-color: #bfe3b4;
+    transition: var(--transition-bg);
+  }
+
+  .node-and-express {
+    background-color: #bfe3b4;
+    transition: var(--transition-bg);
+  }
+
+  .postgresql {
+    background-color: #b3dcee;
+    transition: var(--transition-bg);
+  }
+
+  .stripe {
+    background-color: #d0c6f5;
+    transition: var(--transition-bg);
+  }
+
+  .redux {
+    background-color: #d0c6f5;
+    transition: var(--transition-bg);
+  }
+
+  .azure-devops {
+    background-color: #b0cdf5;
+    transition: var(--transition-bg);
+  }
+
+  .muicore-design-library {
+    background-color: #b0cdf5;
+    transition: var(--transition-bg);
+  }
+
+  .openstreetmap {
+    background-color: #cde3b0;
+    transition: var(--transition-bg);
+  }
+
+  .seo {
+    background-color: #d8e3a8;
+    transition: var(--transition-bg);
+  }
+
+  .custom-template {
+    background-color: #cacaca;
+    transition: var(--transition-bg);
+  }
+
+  .forminator {
+    background-color: #e3cfae;
+    transition: var(--transition-bg);
+  }
+
+  .sécurité {
+    background-color: #f5b9b9;
+    transition: var(--transition-bg);
+  }
+
+  .security {
+    background-color: #f5b9b9;
+    transition: var(--transition-bg);
+  }
+
+  .mailchimp {
+    background-color: #ffdd88;
     transition: var(--transition-bg);
   }
 
@@ -52,178 +169,138 @@ html {
     color: #000;
     transition: var(--transition-bg), var(--transition-text);
   }
+}
 
-  .nextjs,
-  .vercel {
-    background-color: #404040;
-    transition: var(--transition-bg);
+html.dark {
+  .astro {
+    background-color: #7f4932;
   }
 
-  .payloadcms,
-  .api-rest,
+  .html {
+    background-color: #7f4932;
+  }
+
+  .css {
+    background-color: #324b7f;
+  }
+
+  .tailwindcss {
+    background-color: #32547f;
+  }
+
+  .typescript {
+    background-color: #32547f;
+  }
+
+  .react {
+    background-color: #32547f;
+  }
+
+  .sass {
+    background-color: #602957;
+  }
+
+  .open-props {
+    background-color: #3a4367;
+  }
+
+  .javascript {
+    background-color: #665e24;
+  }
+
+  .php {
+    background-color: #616161;
+  }
+
+  .wordpress {
+    background-color: #3a4367;
+  }
+
+  .firebase {
+    background-color: #7f6932;
+  }
+
+  .nextjs {
+    background-color: #404040;
+  }
+
+  .vercel {
+    background-color: #404040;
+  }
+
+  .payloadcms {
+    background-color: #2f6b66;
+  }
+
+  .api-rest {
+    background-color: #2f6b66;
+  }
+
   .rest-api {
     background-color: #2f6b66;
-    transition: var(--transition-bg);
   }
 
   .figma {
     background-color: #7f3248;
-    transition: var(--transition-bg);
   }
 
-  .pandacss,
-  .node-et-express,
+  .pandacss {
+    background-color: #3a6b32;
+  }
+
+  .node-et-express {
+    background-color: #3a6b32;
+  }
+
   .node-and-express {
     background-color: #3a6b32;
-    transition: var(--transition-bg);
   }
 
   .postgresql {
     background-color: #2a5f7f;
-    transition: var(--transition-bg);
   }
 
-  .stripe,
+  .stripe {
+    background-color: #4b3a8f;
+  }
+
   .redux {
     background-color: #4b3a8f;
-    transition: var(--transition-bg);
   }
 
-  .azure-devops,
+  .azure-devops {
+    background-color: #1f4f8f;
+  }
+
   .muicore-design-library {
     background-color: #1f4f8f;
-    transition: var(--transition-bg);
   }
 
   .openstreetmap {
     background-color: #4a6b2a;
-    transition: var(--transition-bg);
   }
 
   .seo {
     background-color: #5a6b2a;
-    transition: var(--transition-bg);
   }
 
   .custom-template {
     background-color: #616161;
-    transition: var(--transition-bg);
   }
 
   .forminator {
     background-color: #6b4a2a;
-    transition: var(--transition-bg);
   }
 
-  .sécurité,
+  .sécurité {
+    background-color: #7f3232;
+  }
+
   .security {
     background-color: #7f3232;
-    transition: var(--transition-bg);
   }
 
   .mailchimp {
     background-color: #7f6932;
-    transition: var(--transition-bg);
-  }
-}
-
-html.dark {
-  .astro,
-  .html {
-    background-color: #ffbc96;
-  }
-
-  .css {
-    background-color: #1c80bf5e;
-  }
-
-  .tailwindcss,
-  .typescript,
-  .react {
-    background-color: #bddaff;
-  }
-
-  .sass {
-    background-color: color-mix(in srgb, #602957, #fff 70%);
-  }
-
-  .open-props {
-    background-color: #c1cbf1;
-  }
-
-  .javascript {
-    background-color: #e2da9a;
-  }
-
-  .php {
-    background-color: #cacaca;
-  }
-
-  .wordpress {
-    background-color: #b1b8d1;
-  }
-
-  .firebase {
-    background-color: #ffdd88;
-  }
-
-  .nextjs,
-  .vercel {
-    background-color: #d9d9d9;
-  }
-
-  .payloadcms,
-  .api-rest,
-  .rest-api {
-    background-color: #b5ddd9;
-  }
-
-  .figma {
-    background-color: #ffb5c4;
-  }
-
-  .pandacss,
-  .node-et-express,
-  .node-and-express {
-    background-color: #bfe3b4;
-  }
-
-  .postgresql {
-    background-color: #b3dcee;
-  }
-
-  .stripe,
-  .redux {
-    background-color: #d0c6f5;
-  }
-
-  .azure-devops,
-  .muicore-design-library {
-    background-color: #b0cdf5;
-  }
-
-  .openstreetmap {
-    background-color: #cde3b0;
-  }
-
-  .seo {
-    background-color: #d8e3a8;
-  }
-
-  .custom-template {
-    background-color: #cacaca;
-  }
-
-  .forminator {
-    background-color: #e3cfae;
-  }
-
-  .sécurité,
-  .security {
-    background-color: #f5b9b9;
-  }
-
-  .mailchimp {
-    background-color: #ffdd88;
   }
 }

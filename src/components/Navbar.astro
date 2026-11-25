@@ -69,10 +69,11 @@ const links = t("navbar", { returnObjects: true })
 
 <!-- Este script se ejecuta cuando se carga la página y pueda aplicar el estilo correspondiente a .toggle-thumb -->
 <script is:inline>
+  // La pastille est à droite (soleil) en thème clair, à gauche (lune) en thème sombre
   if (localStorage.getItem('dark-theme') === 'true') {
-    document.querySelector('.toggle-thumb').classList.add('active')
-  } else {
     document.querySelector('.toggle-thumb').classList.remove('active')
+  } else {
+    document.querySelector('.toggle-thumb').classList.add('active')
   }
 </script>
 
@@ -371,13 +372,10 @@ const links = t("navbar", { returnObjects: true })
   // Establecemos una variable global
   let darkModeState = false
 
-  // Detectamos si el usuario tiene habilitado el modo oscuro
-  const getScheme = window.matchMedia('(prefers-color-scheme: dark)')
-
   function toggleDarkMode(state: boolean) {
     document.documentElement.classList.toggle('dark', state)
     toggleThumbs.forEach((thumb) => {
-      thumb.classList.toggle('active', state)
+      thumb.classList.toggle('active', !state)
     })
 
     // Establecemos el valor de la variable global
@@ -396,20 +394,6 @@ const links = t("navbar", { returnObjects: true })
   // al cargar la página verifique el valor almacenado en
   // localStorage
   toggleDarkMode(localStorage.getItem('dark-theme') === 'true')
-
-  // Escuchamos los cambios en las configuración del
-  // del sistema operativo para alternar de tema
-  getScheme.addEventListener('change', () => {
-    // Negamos el valor guardado dentro de la función toggleDarkMode
-    // a la variable global darkModeState y se lo asignamos así misma
-    darkModeState = !darkModeState
-
-    // document.documentElement.classList.toggle('dark')
-    // Llamamos a la funciones toggleDarkMode para alternar el tema
-    // y setSchemeState para guardar el valor en localStorage
-    toggleDarkMode(darkModeState)
-    setSchemeState(darkModeState)
-  })
 
   toggleSwitchs.forEach((toggle) => {
     toggle.addEventListener('change', () => {
