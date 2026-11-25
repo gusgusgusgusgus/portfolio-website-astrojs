@@ -10,7 +10,7 @@ import { rateLimit } from "../../lib/rate-limit"
 
 export const prerender = false
 
-const SITE_NAME = "augustinseminel.com"
+const SITE_NAME = "madebyaugustin.com"
 const MAX_BODY = 32_000
 
 const json = (body: unknown, status = 200, headers: HeadersInit = {}) =>
