@@ -234,7 +234,18 @@
   },
   "contact": {
     "title": "Envie de travailler ensemble?",
-    "subtitle": "Je peux intégrer votre équipe ou travailler en freelance sur votre projet"
+    "subtitle": "Je peux intégrer votre équipe ou travailler en freelance sur votre projet",
+    "form": {
+      "form_title": "Ou écrivez-moi directement",
+      "name": "Votre nom",
+      "email": "Votre email, pour vous recontacter",
+      "message": "Votre message",
+      "submit": "Envoyer",
+      "sending": "Envoi…",
+      "success": "Merci ! Votre message a bien été envoyé.",
+      "error": "Une erreur est survenue. Réessayez plus tard.",
+      "network": "Impossible d'envoyer le message. Vérifiez votre connexion."
+    }
   },
   "footer": {
     "designed": {

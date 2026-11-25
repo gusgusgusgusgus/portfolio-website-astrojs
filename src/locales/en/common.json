@@ -234,7 +234,18 @@
   },
   "contact": {
     "title": "Want to work together?",
-    "subtitle": "I can join your team or work on your project as a freelancer"
+    "subtitle": "I can join your team or work on your project as a freelancer",
+    "form": {
+      "form_title": "Or write to me directly",
+      "name": "Your name",
+      "email": "Your email, so I can get back to you",
+      "message": "Your message",
+      "submit": "Send",
+      "sending": "Sending…",
+      "success": "Thank you! Your message has been sent.",
+      "error": "Something went wrong. Please try again later.",
+      "network": "Unable to send the message. Check your connection."
+    }
   },
   "footer": {
     "designed": {
