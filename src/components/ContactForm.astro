@@ -15,8 +15,6 @@ const endpoint = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/api/contact`
   data-submit={form.submit}
   data-sending={form.sending}
 >
-  <h4 class="form-title">{form.form_title}</h4>
-
   <div class="field">
     <label for="contact-name">{form.name}</label>
     <input
@@ -74,11 +72,6 @@ const endpoint = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/api/contact`
     margin: 56px auto 0;
     text-align: left;
     position: relative;
-  }
-
-  .form-title {
-    text-align: center;
-    font-weight: 500;
   }
 
   .field {

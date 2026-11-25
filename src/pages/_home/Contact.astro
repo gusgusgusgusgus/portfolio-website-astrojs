@@ -15,7 +15,7 @@ const normalizeTitle = title
 
 <section id={normalizeTitle} class="contact">
   <h2 class="headline-1">{title}</h2>
-  <h3 class="headline-2">{subtitle}</h3>
+  <h3 class="headline-2" set:html={subtitle} />
   <ContactForm />
   <canvas id="grid"></canvas>
 </section>
